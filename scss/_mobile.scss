@@ -125,6 +125,16 @@
       flex-direction: row;
     }
   }
+
+  // Founders section
+  .founders {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
 }
 
 // 600px
@@ -215,6 +225,26 @@
       justify-content: center;
       text-align: center;
     }
+  }
+  // Founders section
+  .founders {
+    &__container {
+      padding: 0 40px;
+    }
+    &__header {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .founders__profile {
+    -webkit-align-items: initial;
+    -webkit-box-align: initial;
+    -ms-flex-align: initial;
+    align-items: initial;
   }
 }
 
@@ -370,5 +400,33 @@
       align-items: flex-start;
       padding-left: 25px;
     }
+  }
+
+  // founder section
+  .founders {
+    &__header {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+
+      & > br {
+        display: block;
+      }
+    }
+  }
+  .founders__profile {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+
+  .founders__profile1 {
+    margin-bottom: 0;
   }
 }

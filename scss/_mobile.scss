@@ -1,0 +1,374 @@
+//  1200px
+@include mediaXl {
+  // hero section
+  .hero {
+    min-height: 700px;
+    padding-top: 0;
+    padding-bottom: 60px;
+
+    &__container {
+      padding: auto;
+    }
+
+    // job section
+
+    &__grid {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+
+      &Item1 {
+        width: 50%;
+        -webkit-align-items: flex-start;
+        -webkit-box-align: flex-start;
+        -ms-flex-align: flex-start;
+        align-items: flex-start;
+        padding-right: 64px;
+        text-align: initial;
+
+        &__info {
+          margin-right: 60px;
+          text-align: left;
+        }
+
+        &__buttonBox {
+          -webkit-box-pack: initial;
+          -webkit-justify-content: initial;
+          -ms-flex-pack: initial;
+          justify-content: initial;
+        }
+      }
+
+      &Item2 {
+        max-width: 623px;
+        max-height: 448px;
+        box-shadow: rgb(0 0 0 / 7%) 0px 4px 12px;
+
+        .hero__videoContainer {
+          margin-top: 0px;
+        }
+      }
+
+      &__header {
+        -webkit-box-pack: initial;
+        -webkit-justify-content: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
+      }
+    }
+  }
+
+  // Job section
+  .job {
+    &__item1 {
+      padding-top: 110px;
+      padding-bottom: 110px;
+
+      &__container {
+        padding: 0 100px;
+      }
+    }
+
+    &__grid {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+
+  // technology section
+  .technology {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+
+  // training section
+  .training {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+
+    &__content {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+
+  // Bootcamp section
+  .bootcamp {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+
+    &__reviewItem {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+}
+
+// 600px
+
+@include mediaLg {
+  // hero section
+  .hero__container {
+    padding: 0 20px;
+  }
+  .break {
+    display: none;
+  }
+
+  .hero__videoContainer {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  // Job section
+  .job {
+    &__item1 {
+      // &__container {
+      //     padding: 0 40px;
+      // }
+    }
+
+    &__headerContent__upper {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__grid {
+      -webkit-align-items: initial;
+      -webkit-box-align: initial;
+      -ms-flex-align: initial;
+      align-items: initial;
+    }
+
+    &__grid__3 {
+      margin-bottom: 0;
+    }
+  }
+
+  // technology
+  .technology__header__1 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  // training section
+  .training {
+    &__container {
+      padding: 0 40px;
+    }
+
+    &__header__title {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__content {
+      -webkit-align-items: initial;
+      -webkit-box-align: initial;
+      -ms-flex-align: initial;
+      align-items: initial;
+    }
+  }
+
+  //   Bootcamp section
+  .bootcamp {
+    &__container {
+      padding: 0 40px;
+    }
+
+    .header__title {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+// 900px
+@include mediaMd {
+  .job__headerContent__upper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .job__grid {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+
+    &__1 {
+      margin-bottom: 0;
+    }
+  }
+
+  // technology
+  .technology {
+    &__header {
+      &__1 {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+
+    &__items {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+
+  .training {
+    &__header__title {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__content {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+
+    .content__left {
+      margin-bottom: 0;
+
+      &__wrapper {
+        margin-left: 35px;
+      }
+    }
+
+    .content__right {
+      margin-bottom: 0;
+
+      &__wrapper {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: start;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+        -webkit-box-pack: left;
+        -webkit-justify-content: left;
+        -ms-flex-pack: left;
+        justify-content: left;
+        margin-left: 10px;
+      }
+    }
+
+    .content__image__wrapper {
+      height: 168px;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  //   Bootcamp section
+  .bootcamp {
+    .header__title {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    &__reviews {
+      padding: 30px 0 55px 0;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    &__reviewItem {
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    .image-container {
+      width: 60%;
+      margin: 0;
+    }
+    .image-wrapper {
+      height: 70%;
+    }
+    .review-info {
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+      padding-left: 25px;
+    }
+  }
+}

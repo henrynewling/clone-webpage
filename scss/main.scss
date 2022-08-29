@@ -1,0 +1,17 @@
+@import "config";
+@import "home";
+
+@import url(https://fonts.googleapis.com/css?family=Numans:regular);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Numans", sans-serif;
+  }
+
+  @import "mobile";

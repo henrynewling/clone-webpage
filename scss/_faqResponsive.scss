@@ -44,6 +44,10 @@
       align-items: flex-start;
     }
   }
+  .faq__sticky {
+    position: sticky;
+    top: 100px;
+  }
   .faq__content {
     padding-left: 100px;
   }
@@ -79,5 +83,16 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left;
+  }
+}
+
+// 600
+@include mediaSm {
+  .footer__upperRight {
+    flex-direction: column;
+    flex: 1;
+  }
+  .footer__container {
+    padding: 0 40px;
   }
 }

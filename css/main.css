@@ -2130,8 +2130,10 @@
 }
 
 .faq__sticky {
-  position: sticky;
+  position: relative;
   top: 100px;
+  left: 40px;
+  margin-bottom: 40px;
 }
 
 .faq__sitckyTitle {
@@ -2914,6 +2916,10 @@ body {
     -ms-flex-align: flex-start;
     align-items: flex-start;
   }
+  .faq__sticky {
+    position: sticky;
+    top: 100px;
+  }
   .faq__content {
     padding-left: 100px;
   }
@@ -2943,6 +2949,15 @@ body {
     -ms-flex-pack: start;
     justify-content: flex-start;
     text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__upperRight {
+    flex-direction: column;
+    flex: 1;
+  }
+  .footer__container {
+    padding: 0 40px;
   }
 }
 

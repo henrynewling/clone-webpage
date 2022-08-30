@@ -2,7 +2,7 @@ $primary-color: #5c48d3;
 
 //Media Query Mixins
 @mixin mediaSm {
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }

@@ -2005,6 +2005,403 @@
   flex: 1 1 0%;
 }
 
+.faq-layout1 {
+  background-color: #5c48d3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  height: 500px;
+}
+.faq-layout1 > div {
+  margin: 0 auto;
+  max-width: 1350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: auto;
+}
+
+.faq-layout2 {
+  height: 110px;
+}
+
+.faq__layout3 {
+  background-color: #fafafc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.faq__layout3__container {
+  margin: 0 auto;
+  max-width: 1350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: auto;
+}
+.faq__layout3__container2 {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.faq {
+  background-color: #fff;
+  margin-top: -530px;
+  padding-top: 8px;
+  padding-bottom: 110px;
+  max-width: 1302px;
+  border-radius: 5px;
+  position: relative;
+}
+.faq__container {
+  margin: 0 auto;
+  max-width: 1350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: auto;
+}
+.faq__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.faq__sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.faq__sitckyTitle {
+  font-size: 58px;
+  line-height: 68px;
+  color: rgb(25, 13, 51);
+  font-family: "HK Compakt";
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+
+.faq__stickyText {
+  font-size: 19px;
+  line-height: 25px;
+  color: #190d33;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+}
+.faq__stickyText > a {
+  font-size: 19px;
+  line-height: 28px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #5c48d3;
+  cursor: pointer;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.faq__content {
+  padding-top: 50px;
+  width: 100%;
+  margin-bottom: -80px;
+}
+
+.faq__contentItem {
+  background-color: #fafafc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.faq__contentItemBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 40px 15px 40px;
+}
+.faq__contentItemBox .faq__contentIcon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-left: 40px;
+}
+.faq__contentItemBox .faq__contentIcon i {
+  font-size: 26px;
+  color: #5c48d3;
+}
+.faq__contentItemBox i.fa-plus {
+  display: none;
+}
+.faq__contentItemBox.collapsed i.fa-minus {
+  display: none;
+}
+.faq__contentItemBox.collapsed i.fa-plus {
+  display: block;
+}
+
+.faq__contentQuestion {
+  font-size: 19px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #190d33;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+  font-weight: bold;
+}
+.faq__contentQuestion > h2 {
+  font-size: inherit;
+  font-weight: inherit;
+  display: inline;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+.faq__contentAnswer {
+  font-size: 19px;
+  line-height: 28px;
+  color: rgb(25, 13, 51);
+  font-family: "HK Compakt";
+  font-style: normal;
+  font-weight: 500;
+  padding: 0px 40px 35px;
+}
+.faq__contentAnswer a {
+  color: rgb(92, 72, 211);
+  text-decoration: none;
+}
+
+.otherQuestions {
+  background-color: #5c48d3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.otherQuestions__container {
+  margin: 0 auto;
+  max-width: 1350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: auto;
+}
+.otherQuestions__wrapper {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.otherQuestions__content {
+  margin-bottom: 32px;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+}
+
+.otherQuestions__blank {
+  width: 64px;
+}
+
+.otherQuestions__button {
+  margin-bottom: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.otherQuestions__button > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 0;
+}
+.otherQuestions__button > div > a {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  outline-style: none;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  font-size: 19px;
+  line-height: 31px;
+  color: #5c48d3;
+  background-color: #fff;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+.otherQuestions__button > div > a > span {
+  display: block;
+  padding: 16px 35px;
+  position: relative;
+}
+
+.contentBox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+.contentBox > span {
+  font-size: 36px;
+  line-height: 46px;
+  display: inline-block;
+  padding-bottom: 12px;
+  color: #fff;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 700;
+}
+.contentBox > p {
+  font-size: 19px;
+  line-height: 28px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2479,6 +2876,73 @@ body {
 @media only screen and (min-width: 600px) {
   .layout-1__inner {
     padding: 0 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .faq-layout1 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .faq-layout1 > div {
+    padding: 0 100px;
+  }
+  .faq-layout3 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .faq-layout3__container {
+    padding: 0 100px;
+  }
+  .faq__container {
+    padding: 0 68px;
+  }
+  .otherQuestions {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .otherQuestions__container {
+    padding: 0 100px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .faq__wrapper {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  .faq__content {
+    padding-left: 100px;
+  }
+  .otherQuestions__wrapper {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  .otherQuestions__content {
+    margin-bottom: 0;
+  }
+  .otherQuestions__button > div {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-top: 40px;
+    padding-left: 160px;
+  }
+  .contentBox {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
   }
 }
 

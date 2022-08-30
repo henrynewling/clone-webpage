@@ -1,0 +1,83 @@
+// 1200
+@include mediaXl {
+  .faq-layout1 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    & > div {
+      padding: 0 100px;
+    }
+  }
+  .faq-layout3 {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .faq {
+    &__container {
+      padding: 0 68px;
+    }
+  }
+
+  .otherQuestions {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+}
+
+// 900
+@include mediaMd {
+  .faq {
+    &__wrapper {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .faq__content {
+    padding-left: 100px;
+  }
+  .otherQuestions {
+    &__wrapper {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .otherQuestions__content {
+    margin-bottom: 0;
+  }
+
+  .otherQuestions__button {
+    & > div {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-top: 40px;
+      padding-left: 160px;
+    }
+  }
+
+  .contentBox {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}

@@ -4,7 +4,11 @@
 @import 'faq';
 @import 'article';
 
-@import url(https://fonts.googleapis.com/css?family=Numans:regular);
+@font-face {
+  font-family: 'HK Compakt';
+  src: local('HK Compakt.otf'),
+    url('/assets/fonts/HK\ Compakt.otf') format('opentype');
+}
 
 * {
   margin: 0;

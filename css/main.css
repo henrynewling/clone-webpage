@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Numans:regular);
 .header {
   background: rgb(255, 255, 255);
   height: 70px;
@@ -61,7 +60,7 @@
   transition: color 0.2s ease-in-out 0s;
   text-decoration: none;
   color: rgb(25, 13, 51);
-  font-family: "Numans";
+  font-family: "HK Compakt";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -74,7 +73,7 @@
   transition: color 0.2s ease-in-out 0s;
   text-decoration: none;
   color: rgb(25, 13, 51);
-  font-family: "Numans";
+  font-family: "HK Compakt";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -97,7 +96,7 @@
   line-height: 20px;
   color: rgb(255, 255, 255);
   background-color: #5c48d3;
-  font-family: "Numans";
+  font-family: "HK Compakt";
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
@@ -3006,6 +3005,10 @@
   display: block;
 }
 
+@font-face {
+  font-family: "HK Compakt";
+  src: local("HK Compakt.otf"), url("/assets/fonts/HK Compakt.otf") format("opentype");
+}
 * {
   margin: 0;
   padding: 0;

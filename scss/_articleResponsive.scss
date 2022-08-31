@@ -1,0 +1,152 @@
+// 1200px
+@include mediaXl {
+  .article-hero {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .hero-container {
+    padding: 0 100px;
+  }
+
+  .entrepreneurship {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+
+  .share-article {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+
+  .articles-lists {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .article-grid {
+    width: calc(33.3333% - 20px);
+  }
+  .article-link {
+    height: 455px;
+  }
+}
+
+// 900
+@include mediaMd {
+  .article-hero {
+    padding-top: 40px;
+    height: 500px;
+  }
+  .article-imgWrapper {
+    height: 560px;
+  }
+
+  .entrepreneurship {
+    &__wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .soical-mediaLinks {
+    display: block;
+  }
+
+  .article-content {
+    margin-top: 80px;
+  }
+
+  .articles-lists {
+    height: 480;
+  }
+  //   .articles-lists__grid {
+  //     flex-direction: column;
+  //   }
+  //   .article-grid {
+  //     width: calc(50% - 20px);
+  //   }
+  .article-link {
+    height: 430px;
+  }
+  .article-info {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 25px 30px;
+
+    &__category {
+      padding-bottom: 0;
+    }
+
+    &__owner {
+      bottom: 20px;
+    }
+  }
+
+  .article-layover {
+    &__category {
+      padding-bottom: 0;
+    }
+
+    &__owner {
+      bottom: 20px;
+    }
+  }
+}
+
+// 600
+@include mediaLg {
+  .article-hero {
+    height: 300px;
+    padding-top: 0;
+  }
+
+  .hero-container {
+    padding: 0 40px;
+  }
+
+  .article-imgWrapper {
+    height: 400px;
+  }
+
+  .entrepreneurship {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+  .article-content {
+    margin-top: 70px;
+  }
+  .article-category {
+    padding-bottom: 0;
+  }
+
+  .share-article {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+
+  .articles-lists {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+  //   .article-grid {
+  //     width: calc(100% - 20px);
+  //     height: auto;
+  //     margin: 10px;
+  //   }
+}

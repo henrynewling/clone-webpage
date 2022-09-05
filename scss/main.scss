@@ -4,6 +4,7 @@
 @import 'faq';
 @import 'article';
 @import 'apply';
+@import 'bootcamp';
 
 @font-face {
   font-family: 'HK Compakt';
@@ -19,7 +20,7 @@
 }
 
 body {
-  font-family: 'Numans', sans-serif;
+  font-family: 'Hk Compakt', sans-serif;
 }
 
 @import 'mobile';
@@ -27,3 +28,4 @@ body {
 @import 'faqResponsive';
 @import 'articleResponsive';
 @import 'applyResponsive';
+@import 'bootcampResponsive';

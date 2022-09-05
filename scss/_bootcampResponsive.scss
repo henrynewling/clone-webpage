@@ -1,0 +1,740 @@
+// 1200
+@include mediaXl {
+  .bootcamp {
+    height: 100vh;
+    min-height: 820px;
+    max-height: 1000px;
+
+    &__container {
+      padding: auto;
+    }
+  }
+  .bootcamp__hero {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -110px;
+  }
+  .bootcamp__heroContent {
+    width: 50%;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    padding-right: 64px;
+    text-align: initial;
+  }
+  .bootcamp__type {
+    -webkit-box-pack: initial;
+    -webkit-justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+  }
+  .bootcamp__infoText {
+    margin-right: 60px;
+    text-align: left;
+  }
+  .bootcamp__buttons {
+    -webkit-box-pack: initial;
+    -webkit-justify-content: initial;
+    -ms-flex-pack: initial;
+    justify-content: initial;
+  }
+  .bootcamp__heroImage {
+    margin-top: 0;
+    padding-bottom: 35%;
+  }
+  .about-bootcamp {
+    padding-top: 70px;
+
+    &__container {
+    }
+  }
+  .training-program__container {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .training-program__wrapper {
+    padding: 0 100px;
+  }
+  .objectives {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .objectives__container {
+    padding: 0 100px;
+  }
+
+  .advantage {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .next-session {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+    &__wrapper {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
+  .session-info__wrapper {
+    margin-left: 20px;
+  }
+  .training-feedback {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .training-feedback__wrapper {
+    h2 {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .typical-day {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .typical-day__grid2 {
+    display: flex;
+    flex: 0.5 1 0%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 34px;
+    margin-left: 5px;
+  }
+  .typical-day__img {
+    display: flex;
+    flex: 0.5 1 0%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: 26px;
+    margin-left: -11px;
+
+    img {
+      width: 152px;
+      height: 132px;
+      transform: rotate(90deg);
+    }
+  }
+
+  .ready-apply {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .role__container {
+    margin-top: -140px;
+  }
+  .role__wrapper {
+    padding: 0 68px;
+  }
+
+  .program__container {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .program__wrapper {
+    padding: 0 100px;
+  }
+
+  .about-js {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .default-container {
+    padding: 0 100px;
+  }
+
+  .students {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .student__link {
+    max-width: 270px;
+    margin-left: 0;
+  }
+  .opportunities {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__container {
+      padding: 0 100px;
+    }
+  }
+  .testimonials__sliderContainer {
+    width: 100vw;
+  }
+  .testimonials__sliderWrapper {
+    min-width: 745px;
+  }
+  .admissions {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .event {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+
+  .event__container {
+    padding: 0 100px;
+  }
+
+  .event__blank {
+    right: 10vw;
+    width: 30%;
+    max-width: 480px;
+    top: 200px;
+  }
+}
+
+// 900
+@include mediaMd {
+  .bootcamp__heroImage {
+    // margin-top: 100px;
+    // padding-bottom: 50%;
+  }
+
+  .about-bootcamp {
+    &__grid {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+
+  .about-bootcamp__image {
+    height: 340px;
+  }
+
+  .about-bootcamp__grid1 {
+    margin-bottom: 0;
+  }
+  .about-bootcamp__grid3 {
+    margin-bottom: 0;
+  }
+  .about-bootcamp__content {
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    p {
+      padding-bottom: 0;
+    }
+  }
+  .training-program {
+    .moon-img {
+      left: -15%;
+    }
+  }
+
+  .program-layout1__wrapper {
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .program-layout2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  .program-layout3 {
+    margin-top: 50px;
+  }
+  .training-content {
+    p {
+      padding-top: 8px;
+      padding-bottom: 40px;
+    }
+  }
+  .objectives__grid {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .objectives__grid1 {
+    margin-bottom: 0;
+
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .objectives__content {
+    padding-left: 60px;
+  }
+  .advantage {
+    &__header {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .advantage__lists {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .next-session {
+    &__wrapper {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+  .session-content {
+    margin-bottom: 32px;
+
+    h2 {
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .session-info {
+    margin-bottom: 0;
+  }
+  .session-info__title {
+    width: 400px;
+  }
+  .session-info__wrapper {
+    min-width: 534px;
+  }
+  .typical-day__timing {
+    -webkit-transform: rotate(-17deg);
+    -ms-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+    margin-bottom: 50px;
+    margin-left: -10px;
+  }
+  .typical-day__ctx {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .typical-day__dash {
+    &::after {
+      top: 50%;
+      transform: translateY(-50%);
+      right: auto;
+    }
+  }
+  .ready-apply__ctx {
+    h2 {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .progress {
+    padding-top: 0;
+  }
+  .float-img__box {
+    -webkit-transform: translateY(-19%);
+    -ms-transform: translateY(-19%);
+    transform: translateY(-19%);
+    width: 20vw;
+  }
+  .progress__container {
+    padding-top: 110px;
+    padding-bottom: 176px;
+  }
+  .progress__wrapper {
+    padding: 0 100px;
+  }
+  .default-grid {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  .about-js__grid3 {
+    margin-bottom: 0;
+  }
+  .grid-header {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .goal {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .goal__wrapper {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+  .grid1,
+  .grid3 {
+    margin-bottom: 0;
+  }
+  .goal__ctx {
+    padding-right: 80px;
+
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .goal__img {
+    margin-top: 65px;
+  }
+
+  .students__ctxWrapper {
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .students__lists {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .opportunities {
+    &__wrapper {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: flex-start;
+      -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+      align-items: flex-start;
+    }
+  }
+  .opportunities__grid1,
+  .opportunities__grid3 {
+    margin-bottom: 0;
+  }
+  .opportunities__ctx {
+    padding-right: 60px;
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  .opportunities__ctxRight {
+    padding-left: 24px;
+  }
+  .position-salary {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .testimonials__img {
+    width: 760px;
+    right: -100px;
+  }
+  .testimonials__container {
+    height: 650px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .admissions__header {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 120px;
+  }
+  .admissions__process {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    &::after {
+      left: 0;
+      right: 0;
+      top: 80px;
+      height: 4px;
+      width: 100%;
+      bottom: auto;
+    }
+  }
+  .process-odd {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    left: 0;
+
+    &::after {
+      top: 70px;
+      left: auto;
+      right: auto;
+    }
+  }
+  .process-even {
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 0;
+
+    &::after {
+      top: 70px;
+      left: auto;
+      right: auto;
+    }
+  }
+  .process-img {
+    height: 77px;
+    padding-bottom: 40px;
+  }
+  .process-ctx {
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .event__grid {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+  }
+
+  .event__grid1,
+  .event__grid3 {
+    margin-bottom: 0;
+  }
+
+  .event__grid1 {
+    h2 {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+}
+
+// 600
+@include mediaLg {
+  .bootcamp {
+    &__container {
+      padding: 0 20px;
+    }
+  }
+
+  .bootcamp__heroContent {
+    h1 {
+      br {
+        display: block;
+      }
+    }
+  }
+  .break-type {
+    display: none;
+  }
+  .bootcamp__heroImage {
+    // margin-top: 100px;
+    // padding-bottom: 60%;
+  }
+  .about-bootcamp {
+    &__container {
+      padding: 0 20px;
+    }
+  }
+  .advantage__lists {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .ready-apply__img {
+    top: -190px;
+    height: 295px;
+  }
+  .ready-apply__blank {
+    width: 740px;
+    height: 150px;
+    top: -50px;
+  }
+  .ready-apply__ctxBtn {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .d-600-none {
+    display: none;
+  }
+  .position-salary__info {
+    width: 420px;
+  }
+  .testimonials__sliderContainer {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 80vw;
+  }
+  .testimonials__clientImg {
+    top: -65px;
+  }
+  .client-name {
+    padding-top: 50px;
+  }
+  .client-text {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 50px 20px 50px;
+  }
+  .admissions__container {
+    padding: 0 40px;
+  }
+
+  .event-timimg {
+    flex: 1 1 0%;
+  }
+  .event-info-link {
+    flex: 2 1 0%;
+  }
+}
+
+// mobile
+@include mediaSm {
+  .objectives__container {
+    .objectives__container {
+      padding: 0 40px;
+    }
+  }
+  .advantage {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+  .float-img__box {
+    top: 50%;
+    -webkit-transform: translateY(-62%);
+    -ms-transform: translateY(-62%);
+    transform: translateY(-62%);
+    width: 24vw;
+  }
+  .progress__wrapper {
+    padding: 0 40px;
+  }
+  .progress__headerBox {
+    h2 {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .default-container {
+    padding: 0 40px;
+  }
+
+  .students {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+  .opportunities {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+  .event__container {
+    padding: 0 40px;
+  }
+}

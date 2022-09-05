@@ -294,6 +294,7 @@
   color: #dadada;
   text-align: center;
 }
+
 button {
   background-color: transparent;
   border-style: none;
@@ -305,6 +306,7 @@ button {
   background-color: #fff;
   border-radius: 0px 0px 10px 10px;
   padding: 35px 30px;
+  position: relative;
 }
 
 .apply-form-grid {
@@ -526,7 +528,7 @@ button {
   color: #fff;
   min-width: 133px;
   min-height: 62px;
-  background-color: #dddfdf;
+  // background-color: #dddfdf;
 }
 
 .pluspoint {
@@ -604,7 +606,202 @@ button {
   }
 }
 
-// .form-layout {
-//   position: relative;
-//   overflow: hidden;
-// }
+.form-layout {
+  width: 650px;
+  height: 1000px;
+  position: relative;
+  overflow: hidden;
+
+  .all-forms {
+    height: 100%;
+  }
+
+  form {
+    position: absolute;
+  }
+
+  .personal-info-form {
+    left: -100%;
+  }
+
+  .extra-info-form {
+    left: -150%;
+  }
+}
+
+.long-input {
+  & > div {
+    width: 100%;
+  }
+}
+
+.next-prev-btn {
+  display: flex;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.form-prev-btn {
+  font-family: 'HK Compakt';
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(92, 72, 211);
+  font-size: 19px;
+  cursor: pointer;
+  padding: 10px 15px 10px 0px;
+
+  & > svg {
+    margin-right: 5px;
+  }
+}
+
+.form-next-btn {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  outline-style: none;
+  transition-timing-function: ease-in-out;
+  font-size: 19px;
+  line-height: 31px;
+  font-family: 'HK Compakt';
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 50px;
+  display: block;
+  color: rgb(255, 255, 255);
+  min-width: 133px;
+  min-height: 62px;
+  background-color: #5c48d3;
+
+  & > span {
+    display: block;
+    padding: 17px 40px;
+    position: relative;
+  }
+}
+
+.form__input {
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  color: #190d33;
+  border: 1px solid #dddfdf;
+}
+
+.form__textarea {
+  font-family: HK Compakt;
+  font-style: normal;
+  font-weight: 500;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  color: #190d33;
+  border: 1px solid #dddfdf;
+  padding-top: 18px;
+  height: 8em;
+  resize: none;
+  border: 1px solid #dddfdf;
+}
+
+.extra-info-form {
+  .form__input,
+  .form__textarea {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.form3-primary-text {
+  line-height: 28px;
+  font-family: 'HK Compakt';
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(25, 13, 51);
+  font-size: 17px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.form3-secondary-text {
+  color: rgb(25, 13, 51);
+  font-family: 'HK Compakt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0px 0px 20px;
+}
+
+.form3-choice-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+.choice-1,
+.choice-2 {
+  font-family: 'HK Compakt';
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 11px 10px;
+  text-align: center;
+  border-radius: 3px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 90px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  border: 1px solid rgb(218, 218, 218);
+  color: rgb(218, 218, 218);
+  margin-left: 0px;
+}
+
+.choice-2 {
+  margin-left: 10px;
+}
+
+.form3-terms {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(25, 13, 51);
+    font-family: 'HK Compakt';
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 10px;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  input {
+    margin-top: 2px;
+  }
+}

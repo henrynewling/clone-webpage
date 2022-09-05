@@ -14,7 +14,12 @@
           <img
             src="assets/images/logo-le-reacteur-2.png"
             alt="Le Reacteur - Logo"
-            class="logo"
+            class="logo logo2"
+          />
+          <img
+            src="assets/images/logo-le-reacteur.png"
+            alt="Le Reacteur - Logo"
+            class="logo logo1"
           />
         </a>
         <div class="blank"></div>
@@ -34,6 +39,27 @@
           <a class="nav__secondaryButton" href="/postuler">
             <span>Postuler</span>
           </a>
+        </div>
+        <button class="menu-btn">
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+          <div class="menu-btn__line"></div>
+        </button>
+        <div class="hamburger-menu">
+          <div class="hamburger-menu__wrapper">
+            <a class="nav__link" href="/recruteurs/">Bootcamp</a>
+            <a class="nav__link" href="/recruteurs/">Entreprises</a>
+            <a class="nav__link" href="/recruteurs/">Recruteurs</a>
+            <a class="nav__link" href="/evenements/">Événements</a>
+            <a class="nav__link" href="/blog/">Blog</a>
+            <a class="nav__link" href="/podcast/">Podcast</a>
+            <a class="nav__secondaryButton" href="/postuler">
+              <span>Postuler</span>
+            </a>
+            <button class="close-menu-btn">
+              <span>&times;</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -75,589 +101,315 @@
           <div class="apply-form-container">
             <div class="apply-form-grid">
               <div class="form-layout">
-                <form action="#" id="form1" class="apply-form">
-                  <p class="apply-form__text1">
-                    Quelle formation vous intéresse ?
-                  </p>
-                  <div class="training-form-group">
-                    <div class="training-form-grid">
-                      <div class="training-grid-1">Temps Plein<br /></div>
-                      <div class="training-grid-2">
-                        Développeur Web et Mobile
-                      </div>
-                      <div class="training-grid-3">10 semaines</div>
-                    </div>
-                    <div class="training-form-grid">
-                      <div class="training-grid-1">Temps Partiel<br /></div>
-                      <div class="training-grid-2">
-                        Développeur Web et Mobile
-                      </div>
-                      <div class="training-grid-3">24 semaines</div>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="form-question">Quelle session ?</p>
-                    <div class="session-grid">
-                      <div class="session-grid__item">
-                        <div class="item-wrapper">
-                          <div class="item-content">
-                            Du 3 octobre 2022<br />
-                            au 9 décembre 2022
-                          </div>
-                          <!-- <div class="css-1kj3kmp"></div>
-                        <div class="css-13256gu"></div> -->
+                <div class="all-forms">
+                  <form id="form1" class="apply-form">
+                    <p class="apply-form__text1">
+                      Quelle formation vous intéresse ?
+                    </p>
+                    <div class="training-form-group">
+                      <div class="training-form-grid">
+                        <div class="training-grid-1">Temps Plein<br /></div>
+                        <div class="training-grid-2">
+                          Développeur Web et Mobile
                         </div>
+                        <div class="training-grid-3">10 semaines</div>
                       </div>
-                      <div class="session-grid__item">
-                        <div class="item-wrapper">
-                          <div class="item-content">
-                            Du 2 janvier 2023<br />
-                            au 10 mars 2023
-                          </div>
-                          <!-- <div class="css-1kj3kmp"></div>
-                        <div class="css-13256gu"></div> -->
+                      <div class="training-form-grid">
+                        <div class="training-grid-1">Temps Partiel<br /></div>
+                        <div class="training-grid-2">
+                          Développeur Web et Mobile
                         </div>
-                      </div>
-                      <div class="session-grid__item">
-                        <div class="item-wrapper">
-                          <div class="item-content">
-                            Du 27 mars 2023<br />
-                            au 2 juin 2023
-                          </div>
-                          <!-- <div class="css-1kj3kmp"></div>
-                        <div class="css-13256gu"></div> -->
-                        </div>
-                      </div>
-                      <div class="session-grid__item">
-                        <div class="item-wrapper">
-                          <div class="item-content">
-                            Du 19 juin 2023<br />
-                            au 25 août 2023
-                          </div>
-                          <div class="css-1kj3kmp"></div>
-                          <div class="css-13256gu"></div>
-                        </div>
+                        <div class="training-grid-3">24 semaines</div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <p class="form-question">Quel format ?</p>
-                    <div class="format-grid">
-                      <div class="format-grid__item">
-                        <div class="format-item-text1">En présentiel<br /></div>
-                        <div class="format-item-text2">
-                          Dans nos locaux à Paris
+                    <div>
+                      <p class="form-question">Quelle session ?</p>
+                      <div class="session-grid">
+                        <div class="session-grid__item">
+                          <div class="item-wrapper">
+                            <div class="item-content">
+                              Du 3 octobre 2022<br />
+                              au 9 décembre 2022
+                            </div>
+                            <!-- <div class="css-1kj3kmp"></div>
+                          <div class="css-13256gu"></div> -->
+                          </div>
                         </div>
-                        <div class="format-item-text3">
+                        <div class="session-grid__item">
+                          <div class="item-wrapper">
+                            <div class="item-content">
+                              Du 2 janvier 2023<br />
+                              au 10 mars 2023
+                            </div>
+                            <!-- <div class="css-1kj3kmp"></div>
+                          <div class="css-13256gu"></div> -->
+                          </div>
+                        </div>
+                        <div class="session-grid__item">
+                          <div class="item-wrapper">
+                            <div class="item-content">
+                              Du 27 mars 2023<br />
+                              au 2 juin 2023
+                            </div>
+                            <!-- <div class="css-1kj3kmp"></div>
+                          <div class="css-13256gu"></div> -->
+                          </div>
+                        </div>
+                        <div class="session-grid__item">
+                          <div class="item-wrapper">
+                            <div class="item-content">
+                              Du 19 juin 2023<br />
+                              au 25 août 2023
+                            </div>
+                            <div class="css-1kj3kmp"></div>
+                            <div class="css-13256gu"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="form-question">Quel format ?</p>
+                      <div class="format-grid">
+                        <div class="format-grid__item">
+                          <div class="format-item-text1">
+                            En présentiel<br />
+                          </div>
+                          <div class="format-item-text2">
+                            Dans nos locaux à Paris
+                          </div>
                           <div class="format-item-text3">
-                            <div class="format-item-text4">
-                              <div>7 500€</div>
+                            <div class="format-item-text3">
+                              <div class="format-item-text4">
+                                <div>7 500€</div>
+                                <span
+                                  >&nbsp;financement perso et/ou CPF&nbsp;</span
+                                >
+                              </div>
+                            </div>
+                            <div class="format-item-text5">OU</div>
+                            <div class="format-item-text3">
+                              <div>8 500€ HT</div>
                               <span
-                                >&nbsp;financement perso et/ou CPF&nbsp;</span
+                                >&nbsp;entreprises, OPCO, Trans. Pro&nbsp;</span
                               >
                             </div>
                           </div>
-                          <div class="format-item-text5">OU</div>
-                          <div class="format-item-text3">
-                            <div>8 500€ HT</div>
-                            <span
-                              >&nbsp;entreprises, OPCO, Trans. Pro&nbsp;</span
-                            >
+                        </div>
+                        <div class="format-grid__item">
+                          <div class="format-item-text1">
+                            En présentiel<br />
                           </div>
-                        </div>
-                      </div>
-                      <div class="format-grid__item">
-                        <div class="format-item-text1">En présentiel<br /></div>
-                        <div class="format-item-text2">
-                          Dans nos locaux à Paris
-                        </div>
-                        <div class="format-item-text3">
+                          <div class="format-item-text2">
+                            Dans nos locaux à Paris
+                          </div>
                           <div class="format-item-text3">
-                            <div class="format-item-text4">
-                              <div>7 500€</div>
+                            <div class="format-item-text3">
+                              <div class="format-item-text4">
+                                <div>7 500€</div>
+                                <span
+                                  >&nbsp;financement perso et/ou CPF&nbsp;</span
+                                >
+                              </div>
+                            </div>
+                            <div class="format-item-text5">OU</div>
+                            <div class="format-item-text3">
+                              <div>8 500€ HT</div>
                               <span
-                                >&nbsp;financement perso et/ou CPF&nbsp;</span
+                                >&nbsp;entreprises, OPCO, Trans. Pro&nbsp;</span
                               >
                             </div>
-                          </div>
-                          <div class="format-item-text5">OU</div>
-                          <div class="format-item-text3">
-                            <div>8 500€ HT</div>
-                            <span
-                              >&nbsp;entreprises, OPCO, Trans. Pro&nbsp;</span
-                            >
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <button class="apply-next-btn" type="submit">
-                    <span>Suivant</span>
-                  </button>
-                </form>
+                    <button id="nextBtn1" class="apply-next-btn">
+                      <span>Suivant</span>
+                    </button>
+                  </form>
 
-                <!-- Second form -->
-                <!-- <form action="#" id="form2" class="personal-info-form">
-                  <div>
-                    <div class="css-6kws1y">
-                      <div>
-                        <p class="css-fqwpl8">Prénom</p>
-                        <input
-                          type="firstName"
-                          name="firstName"
-                          class="css-nr4kx3"
-                          value=""
-                        />
-                      </div>
-                      <div class="css-esn5ad">
-                        <p class="css-fqwpl8">Nom</p>
-                        <input
-                          type="lastName"
-                          name="lastName"
-                          class="css-nr4kx3"
-                          value=""
-                        />
-                      </div>
-                    </div>
-                    <p class="css-fvxzqu">Date de naissance</p>
-                    <input
-                      type="text"
-                      placeholder="JJ/MM/AAAA"
-                      class="css-8bb0z3"
-                      value=""
-                    />
-                    <div class="css-ti0dcl">
-                      <div>
-                        <p class="css-fqwpl8">Email</p>
-                        <input
-                          type="email"
-                          name="email"
-                          class="css-nr4kx3"
-                          value=""
-                        />
-                      </div>
-                      <div class="css-esn5ad">
-                        <p class="css-fqwpl8">Téléphone</p>
-                        <div class="css-18sienv PhoneInput">
-                          <div class="PhoneInputCountry">
-                            <select
-                              aria-label="Phone number country"
-                              class="PhoneInputCountrySelect"
-                            >
-                              <option value="ZZ">International</option>
-                              <option value="AF">Afghanistan</option>
-                              <option value="AX">Åland Islands</option>
-                              <option value="AL">Albania</option>
-                              <option value="DZ">Algeria</option>
-                              <option value="AS">American Samoa</option>
-                              <option value="AD">Andorra</option>
-                              <option value="AO">Angola</option>
-                              <option value="AI">Anguilla</option>
-                              <option value="AG">Antigua and Barbuda</option>
-                              <option value="AR">Argentina</option>
-                              <option value="AM">Armenia</option>
-                              <option value="AW">Aruba</option>
-                              <option value="AC">Ascension Island</option>
-                              <option value="AU">Australia</option>
-                              <option value="AT">Austria</option>
-                              <option value="AZ">Azerbaijan</option>
-                              <option value="BS">Bahamas</option>
-                              <option value="BH">Bahrain</option>
-                              <option value="BD">Bangladesh</option>
-                              <option value="BB">Barbados</option>
-                              <option value="BY">Belarus</option>
-                              <option value="BE">Belgium</option>
-                              <option value="BZ">Belize</option>
-                              <option value="BJ">Benin</option>
-                              <option value="BM">Bermuda</option>
-                              <option value="BT">Bhutan</option>
-                              <option value="BO">Bolivia</option>
-                              <option value="BQ">
-                                Bonaire, Sint Eustatius and Saba
-                              </option>
-                              <option value="BA">Bosnia and Herzegovina</option>
-                              <option value="BW">Botswana</option>
-                              <option value="BR">Brazil</option>
-                              <option value="IO">
-                                British Indian Ocean Territory
-                              </option>
-                              <option value="BN">Brunei Darussalam</option>
-                              <option value="BG">Bulgaria</option>
-                              <option value="BF">Burkina Faso</option>
-                              <option value="MM">Burma</option>
-                              <option value="BI">Burundi</option>
-                              <option value="KH">Cambodia</option>
-                              <option value="CM">Cameroon</option>
-                              <option value="CA">Canada</option>
-                              <option value="CV">Cape Verde</option>
-                              <option value="KY">Cayman Islands</option>
-                              <option value="CF">
-                                Central African Republic
-                              </option>
-                              <option value="TD">Chad</option>
-                              <option value="CL">Chile</option>
-                              <option value="CN">China</option>
-                              <option value="CX">Christmas Island</option>
-                              <option value="CC">
-                                Cocos (Keeling) Islands
-                              </option>
-                              <option value="CO">Colombia</option>
-                              <option value="KM">Comoros</option>
-                              <option value="CG">Congo</option>
-                              <option value="CD">
-                                Congo, Democratic Republic of the
-                              </option>
-                              <option value="CK">Cook Islands</option>
-                              <option value="CR">Costa Rica</option>
-                              <option value="CI">Cote d'Ivoire</option>
-                              <option value="HR">Croatia</option>
-                              <option value="CU">Cuba</option>
-                              <option value="CW">Curaçao</option>
-                              <option value="CY">Cyprus</option>
-                              <option value="CZ">Czech Republic</option>
-                              <option value="DK">Denmark</option>
-                              <option value="DJ">Djibouti</option>
-                              <option value="DM">Dominica</option>
-                              <option value="DO">Dominican Republic</option>
-                              <option value="EC">Ecuador</option>
-                              <option value="EG">Egypt</option>
-                              <option value="SV">El Salvador</option>
-                              <option value="GQ">Equatorial Guinea</option>
-                              <option value="ER">Eritrea</option>
-                              <option value="EE">Estonia</option>
-                              <option value="ET">Ethiopia</option>
-                              <option value="FK">Falkland Islands</option>
-                              <option value="FO">Faroe Islands</option>
-                              <option value="FM">
-                                Federated States of Micronesia
-                              </option>
-                              <option value="FJ">Fiji</option>
-                              <option value="FI">Finland</option>
-                              <option value="FR">France</option>
-                              <option value="GF">French Guiana</option>
-                              <option value="PF">French Polynesia</option>
-                              <option value="GA">Gabon</option>
-                              <option value="GM">Gambia</option>
-                              <option value="GE">Georgia</option>
-                              <option value="DE">Germany</option>
-                              <option value="GH">Ghana</option>
-                              <option value="GI">Gibraltar</option>
-                              <option value="GR">Greece</option>
-                              <option value="GL">Greenland</option>
-                              <option value="GD">Grenada</option>
-                              <option value="GP">Guadeloupe</option>
-                              <option value="GU">Guam</option>
-                              <option value="GT">Guatemala</option>
-                              <option value="GG">Guernsey</option>
-                              <option value="GN">Guinea</option>
-                              <option value="GW">Guinea-Bissau</option>
-                              <option value="GY">Guyana</option>
-                              <option value="HT">Haiti</option>
-                              <option value="VA">
-                                Holy See (Vatican City State)
-                              </option>
-                              <option value="HN">Honduras</option>
-                              <option value="HK">Hong Kong</option>
-                              <option value="HU">Hungary</option>
-                              <option value="IS">Iceland</option>
-                              <option value="IN">India</option>
-                              <option value="ID">Indonesia</option>
-                              <option value="IR">Iran</option>
-                              <option value="IQ">Iraq</option>
-                              <option value="IE">Ireland</option>
-                              <option value="IM">Isle of Man</option>
-                              <option value="IL">Israel</option>
-                              <option value="IT">Italy</option>
-                              <option value="JM">Jamaica</option>
-                              <option value="JP">Japan</option>
-                              <option value="JE">Jersey</option>
-                              <option value="JO">Jordan</option>
-                              <option value="KZ">Kazakhstan</option>
-                              <option value="KE">Kenya</option>
-                              <option value="KI">Kiribati</option>
-                              <option value="XK">Kosovo</option>
-                              <option value="KW">Kuwait</option>
-                              <option value="KG">Kyrgyzstan</option>
-                              <option value="LA">Laos</option>
-                              <option value="LV">Latvia</option>
-                              <option value="LB">Lebanon</option>
-                              <option value="LS">Lesotho</option>
-                              <option value="LR">Liberia</option>
-                              <option value="LY">Libya</option>
-                              <option value="LI">Liechtenstein</option>
-                              <option value="LT">Lithuania</option>
-                              <option value="LU">Luxembourg</option>
-                              <option value="MO">Macao</option>
-                              <option value="MG">Madagascar</option>
-                              <option value="MW">Malawi</option>
-                              <option value="MY">Malaysia</option>
-                              <option value="MV">Maldives</option>
-                              <option value="ML">Mali</option>
-                              <option value="MT">Malta</option>
-                              <option value="MH">Marshall Islands</option>
-                              <option value="MQ">Martinique</option>
-                              <option value="MR">Mauritania</option>
-                              <option value="MU">Mauritius</option>
-                              <option value="YT">Mayotte</option>
-                              <option value="MX">Mexico</option>
-                              <option value="MD">Moldova</option>
-                              <option value="MC">Monaco</option>
-                              <option value="MN">Mongolia</option>
-                              <option value="ME">Montenegro</option>
-                              <option value="MS">Montserrat</option>
-                              <option value="MA">Morocco</option>
-                              <option value="MZ">Mozambique</option>
-                              <option value="NA">Namibia</option>
-                              <option value="NR">Nauru</option>
-                              <option value="NP">Nepal</option>
-                              <option value="NL">Netherlands</option>
-                              <option value="NC">New Caledonia</option>
-                              <option value="NZ">New Zealand</option>
-                              <option value="NI">Nicaragua</option>
-                              <option value="NE">Niger</option>
-                              <option value="NG">Nigeria</option>
-                              <option value="NU">Niue</option>
-                              <option value="NF">Norfolk Island</option>
-                              <option value="KP">North Korea</option>
-                              <option value="MK">North Macedonia</option>
-                              <option value="MP">
-                                Northern Mariana Islands
-                              </option>
-                              <option value="NO">Norway</option>
-                              <option value="OM">Oman</option>
-                              <option value="PK">Pakistan</option>
-                              <option value="PW">Palau</option>
-                              <option value="PS">Palestine</option>
-                              <option value="PA">Panama</option>
-                              <option value="PG">Papua New Guinea</option>
-                              <option value="PY">Paraguay</option>
-                              <option value="PE">Peru</option>
-                              <option value="PH">Philippines</option>
-                              <option value="PL">Poland</option>
-                              <option value="PT">Portugal</option>
-                              <option value="PR">Puerto Rico</option>
-                              <option value="QA">Qatar</option>
-                              <option value="RE">Reunion</option>
-                              <option value="RO">Romania</option>
-                              <option value="RU">Russia</option>
-                              <option value="RW">Rwanda</option>
-                              <option value="BL">Saint Barthélemy</option>
-                              <option value="SH">Saint Helena</option>
-                              <option value="KN">Saint Kitts and Nevis</option>
-                              <option value="LC">Saint Lucia</option>
-                              <option value="MF">
-                                Saint Martin (French Part)
-                              </option>
-                              <option value="PM">
-                                Saint Pierre and Miquelon
-                              </option>
-                              <option value="VC">
-                                Saint Vincent and the Grenadines
-                              </option>
-                              <option value="WS">Samoa</option>
-                              <option value="SM">San Marino</option>
-                              <option value="ST">Sao Tome and Principe</option>
-                              <option value="SA">Saudi Arabia</option>
-                              <option value="SN">Senegal</option>
-                              <option value="RS">Serbia</option>
-                              <option value="SC">Seychelles</option>
-                              <option value="SL">Sierra Leone</option>
-                              <option value="SG">Singapore</option>
-                              <option value="SX">Sint Maarten</option>
-                              <option value="SK">Slovakia</option>
-                              <option value="SI">Slovenia</option>
-                              <option value="SB">Solomon Islands</option>
-                              <option value="SO">Somalia</option>
-                              <option value="ZA">South Africa</option>
-                              <option value="KR">South Korea</option>
-                              <option value="SS">South Sudan</option>
-                              <option value="ES">Spain</option>
-                              <option value="LK">Sri Lanka</option>
-                              <option value="SD">Sudan</option>
-                              <option value="SR">Suriname</option>
-                              <option value="SJ">Svalbard and Jan Mayen</option>
-                              <option value="SZ">Swaziland</option>
-                              <option value="SE">Sweden</option>
-                              <option value="CH">Switzerland</option>
-                              <option value="SY">Syria</option>
-                              <option value="TW">Taiwan</option>
-                              <option value="TJ">Tajikistan</option>
-                              <option value="TZ">Tanzania</option>
-                              <option value="TH">Thailand</option>
-                              <option value="TL">Timor-Leste</option>
-                              <option value="TG">Togo</option>
-                              <option value="TK">Tokelau</option>
-                              <option value="TO">Tonga</option>
-                              <option value="TT">Trinidad and Tobago</option>
-                              <option value="TA">Tristan da Cunha</option>
-                              <option value="TN">Tunisia</option>
-                              <option value="TR">Turkey</option>
-                              <option value="TM">Turkmenistan</option>
-                              <option value="TC">
-                                Turks and Caicos Islands
-                              </option>
-                              <option value="TV">Tuvalu</option>
-                              <option value="UG">Uganda</option>
-                              <option value="UA">Ukraine</option>
-                              <option value="AE">United Arab Emirates</option>
-                              <option value="GB">United Kingdom</option>
-                              <option value="US">United States</option>
-                              <option value="UY">Uruguay</option>
-                              <option value="UZ">Uzbekistan</option>
-                              <option value="VU">Vanuatu</option>
-                              <option value="VE">Venezuela</option>
-                              <option value="VN">Vietnam</option>
-                              <option value="VG">
-                                Virgin Islands, British
-                              </option>
-                              <option value="VI">Virgin Islands, U.S.</option>
-                              <option value="WF">Wallis and Futuna</option>
-                              <option value="EH">Western Sahara</option>
-                              <option value="YE">Yemen</option>
-                              <option value="ZM">Zambia</option>
-                              <option value="ZW">Zimbabwe</option>
-                            </select>
-                            <div
-                              class="PhoneInputCountryIcon PhoneInputCountryIcon--border"
-                            >
-                              <img
-                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDg1LjMzMyA1MTIgMzQxLjMzMyI+CjxyZWN0IHk9Ijg1LjMzMSIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSIzNDEuMzM3Ii8+CjxyZWN0IHk9Ijg1LjMzMSIgZmlsbD0iIzAwNTJCNCIgd2lkdGg9IjE3MC42NjMiIGhlaWdodD0iMzQxLjMzNyIvPgo8cmVjdCB4PSIzNDEuMzM3IiB5PSI4NS4zMzEiIGZpbGw9IiNEODAwMjciIHdpZHRoPSIxNzAuNjYzIiBoZWlnaHQ9IjM0MS4zMzciLz4KPC9zdmc+Cg=="
-                                alt="FR"
-                                class="css-10klw3m"
-                              />
-                            </div>
-                            <div class="PhoneInputCountrySelectArrow"></div>
+                  <!-- Second form -->
+                  <form action="#" id="form2" class="personal-info-form">
+                    <div>
+                      <div class="form__group1">
+                        <div>
+                          <div class="form__label">
+                            <p class="label-name">Prénom&nbsp;</p>
+                            <p class="label-required">*</p>
                           </div>
                           <input
-                            type="tel"
-                            autocomplete="tel"
-                            errors="[object Object]"
-                            touched="[object Object]"
-                            placeholder="Entrez votre numéro"
-                            class="PhoneInputInput"
-                            value=""
+                            type="text"
+                            name="firstName"
+                            class="form__input"
+                          />
+                        </div>
+                        <div class="pd-45">
+                          <div class="form__label">
+                            <p class="label-name">Nom&nbsp;</p>
+                            <p class="label-required">*</p>
+                          </div>
+                          <input
+                            type="text"
+                            name="lastName"
+                            class="form__input"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="form__group1 long-input">
+                        <div>
+                          <div class="form__label">
+                            <p class="label-name">Date de naissance</p>
+                          </div>
+                          <input
+                            type="text"
+                            name="date"
+                            placeholder="JJ/MM/AAAA"
+                            class="form__input"
+                          />
+                        </div>
+                      </div>
+                      <div class="form__group1">
+                        <div>
+                          <div class="form__label">
+                            <p class="label-name">Email&nbsp;</p>
+                          </div>
+                          <input type="text" name="email" class="form__input" />
+                        </div>
+                        <div class="pd-45">
+                          <div class="form__label">
+                            <p class="label-name">Téléphone&nbsp;</p>
+                          </div>
+                          <input
+                            type="text"
+                            name="telephone"
+                            class="form__input"
                           />
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="css-yaqscs">
-                    <button type="button" class="css-yus60f">
-                      <svg
-                        width="15"
-                        height="10"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="css-1sylyko"
-                      >
-                        <path
-                          d="M1.5 4.5h9M1.5 4.5l3-3M4.5 7.5l-3-3"
-                          stroke="#5C48D3"
-                          stroke-width="2"
-                          fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      Précédent</button
-                    ><button class="css-29rq2c" type="submit">
-                      <span>Suivant</span>
-                    </button>
-                  </div>
-                </form> -->
+                    <div class="next-prev-btn">
+                      <button id="prevBtn1" type="button" class="form-prev-btn">
+                        <svg
+                          width="15"
+                          height="10"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="css-1sylyko"
+                        >
+                          <path
+                            d="M1.5 4.5h9M1.5 4.5l3-3M4.5 7.5l-3-3"
+                            stroke="#5C48D3"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                        Précédent
+                      </button>
+                      <button id="nextBtn2" class="form-next-btn">
+                        <span>Suivant</span>
+                      </button>
+                    </div>
+                  </form>
 
-                <!-- Second form ends -->
+                  <!-- Second form ends -->
 
-                <!-- Third form -->
-                <!-- <form action="#" id="form3" class="extra-info-form">
-                  <p class="css-fqwpl8">
-                    Êtes-vous inscrit(e)s à Pôle Emploi ?
-                  </p>
-                  <p class="css-bs5rpu">
-                    Nous aimerions savoir si vous êtes potentiellement éligible
-                    à un financement.
-                  </p>
-                  <div class="css-k008qs">
-                    <div class="css-1yrw8ag">Oui</div>
-                    <div class="css-sez4ok">Non</div>
-                  </div>
-                  <div>
-                    <p class="css-1fjrv7a">
-                      Quel est votre identifiant Pôle Emploi ?
+                  <!-- Third form -->
+                  <form action="#" id="form3" class="extra-info-form">
+                    <p class="form3-primary-text">
+                      Êtes-vous inscrit(e)s à Pôle Emploi ?
                     </p>
-                    <p class="css-bs5rpu">
+                    <p class="form3-secondary-text">
                       Nous aimerions savoir si vous êtes potentiellement
                       éligible à un financement.
                     </p>
-                    <input name="question2" class="css-nr4kx3" value="" />
-                  </div>
-                  <p class="css-elye34">Quel est votre code postal ?</p>
-                  <input
-                    type="text"
-                    pattern="[0-9]{5}"
-                    name="question3"
-                    class="css-nr4kx3"
-                    value=""
-                  />
-                  <p class="css-1lm2zod">
-                    Pourquoi souhaitez-vous suivre une formation de ce type ?
-                  </p>
-                  <p class="css-bs5rpu">
-                    Expliquez-nous votre intérêt pour cette formation, nous
-                    sommes curieux d'en savoir plus sur votre motivation.
-                  </p>
-                  <textarea
-                    type="why"
-                    name="why"
-                    class="css-1s8nt4l"
-                  ></textarea>
-                  <p class="css-elye34">Êtes-vous en situation de handicap ?</p>
-                  <p class="css-bs5rpu">
-                    Nous vérifierons ensemble comment vous proposer
-                    l'accompagnement le plus adapté possible.
-                  </p>
-                  <div class="css-k008qs">
-                    <div class="css-1yrw8ag">Oui</div>
-                    <div class="css-sez4ok">Non</div>
-                  </div>
-                  <div class="css-d7lf40">
+                    <div class="form3-choice-box">
+                      <div class="choice-1">Oui</div>
+                      <div class="choice-2">Non</div>
+                    </div>
+                    <div>
+                      <p class="form3-primary-text">
+                        Quel est votre identifiant Pôle Emploi ?
+                      </p>
+                      <p class="form3-secondary-text">
+                        Nous aimerions savoir si vous êtes potentiellement
+                        éligible à un financement.
+                      </p>
+                      <input name="question2" class="form__input" value="" />
+                    </div>
+                    <p class="form3-primary-text">
+                      Quel est votre code postal ?
+                    </p>
                     <input
-                      name="optIn"
-                      id="optIn"
-                      type="checkbox"
-                      class="css-g89h0y"
+                      type="text"
+                      pattern="[0-9]{5}"
+                      name="question3"
+                      class="form__input"
                       value=""
                     />
-                    <p class="css-16xmwrf">
-                      <label for="optIn"
-                        >J'accepte que Le Reacteur me recontacte par
-                        mail.</label
-                      >
+                    <p class="form3-primary-text">
+                      Pourquoi souhaitez-vous suivre une formation de ce type ?
                     </p>
-                  </div>
-                  <div class="css-1czkgpg">
-                    <button type="button" class="css-yus60f">
-                      <svg
-                        width="15"
-                        height="10"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="css-1sylyko"
-                      >
-                        <path
-                          d="M1.5 4.5h9M1.5 4.5l3-3M4.5 7.5l-3-3"
-                          stroke="#5C48D3"
-                          stroke-width="2"
-                          fill="none"
-                          fill-rule="evenodd"
-                          stroke-linecap="round"
-                        ></path>
-                      </svg>
-                      Précédent</button
-                    ><button class="css-29rq2c" type="submit">
-                      <span>Envoyer</span>
-                    </button>
-                  </div>
-                </form> -->
-                <!-- Third form Ends -->
+                    <p class="form3-secondary-text">
+                      Expliquez-nous votre intérêt pour cette formation, nous
+                      sommes curieux d'en savoir plus sur votre motivation.
+                    </p>
+                    <textarea
+                      type="why"
+                      name="why"
+                      class="form__textarea"
+                    ></textarea>
+                    <p class="form3-primary-text">
+                      Êtes-vous en situation de handicap ?
+                    </p>
+                    <p class="form3-secondary-text">
+                      Nous vérifierons ensemble comment vous proposer
+                      l'accompagnement le plus adapté possible.
+                    </p>
+                    <div class="form3-choice-box">
+                      <div class="choice-1">Oui</div>
+                      <div class="choice-2">Non</div>
+                    </div>
+                    <div class="form3-terms">
+                      <input
+                        name="optIn"
+                        id="optIn"
+                        type="checkbox"
+                        class="terms-checkbox"
+                        value=""
+                      />
+                      <p class="form3-secondary-text">
+                        <label for="optIn"
+                          >J'accepte que Le Reacteur me recontacte par
+                          mail.</label
+                        >
+                      </p>
+                    </div>
+                    <div class="next-prev-btn">
+                      <button id="prevBtn3" type="button" class="form-prev-btn">
+                        <svg
+                          width="15"
+                          height="10"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="css-1sylyko"
+                        >
+                          <path
+                            d="M1.5 4.5h9M1.5 4.5l3-3M4.5 7.5l-3-3"
+                            stroke="#5C48D3"
+                            stroke-width="2"
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                        Précédent</button
+                      ><button class="form-next-btn" type="submit">
+                        <span>Envoyer</span>
+                      </button>
+                    </div>
+                  </form>
+                  <!-- Third form Ends -->
+                </div>
               </div>
 
               <div class="pluspoint">

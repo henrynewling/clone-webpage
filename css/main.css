@@ -366,6 +366,9 @@
 .hero__gridItem2 {
   flex: 1 1 0%;
   transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero__gridItem2 .hero__videoContainer {
   background-position: 100% 50%;
@@ -2349,6 +2352,11 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.mdoal-video {
+  width: 820px;
+  height: 415px;
 }
 
 .layout-1 {
@@ -9043,6 +9051,10 @@ button {
   scroll-behavior: smooth;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 body {
   font-family: "Hk Compakt", sans-serif;
 }
@@ -9556,6 +9568,49 @@ body {
   }
   .nav {
     display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__gridItem1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hero__gridItem2,
+.job__item1__container,
+.technology__container,
+.training__container,
+.founders__container {
+    padding: 0 20px;
+  }
+  .job__grid__imgWrapper img {
+    height: auto;
+    width: 100%;
+  }
+  .job__grid__1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bootcampHome__reviewItem {
+    align-items: center;
+  }
+  .bootcampHome .image-wrapper {
+    margin-bottom: 10px;
+  }
+  .supporter__wrapper h2 {
+    text-align: center;
+  }
+  .mdoal-video {
+    max-width: 800px;
+    height: 415px;
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .information-meeting__container,
+.podcast__container,
+.supporter__container {
+    padding: 0 40px;
   }
 }
 @media only screen and (min-width: 1200px) {

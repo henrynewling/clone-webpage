@@ -651,3 +651,52 @@
     display: none;
   }
 }
+
+// below 600px
+@media screen and (max-width: 600px) {
+  .hero__gridItem1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .hero__gridItem2,
+  .job__item1__container,
+  .technology__container,
+  .training__container,
+  .founders__container {
+    padding: 0 20px;
+  }
+  .job__grid__imgWrapper img {
+    height: auto;
+    width: 100%;
+  }
+  .job__grid__1 {
+    width: 100%;
+  }
+}
+
+// below 900
+@media screen and (max-width: 900px) {
+  .bootcampHome__reviewItem {
+    align-items: center;
+  }
+  .bootcampHome .image-wrapper {
+    margin-bottom: 10px;
+  }
+  .supporter__wrapper h2 {
+    text-align: center;
+  }
+  .mdoal-video {
+    max-width: 800px;
+    height: 415px;
+    width: 600px;
+  }
+}
+
+// below 1200
+@media screen and (max-width: 1200px) {
+  .information-meeting__container,
+  .podcast__container,
+  .supporter__container {
+    padding: 0 40px;
+  }
+}

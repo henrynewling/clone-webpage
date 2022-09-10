@@ -158,3 +158,31 @@
     margin-right: 10px;
   }
 }
+
+@include mediaSm {
+  .additional-info__container {
+    padding: 0 40px;
+  }
+  .additional-header {
+    text-align: center;
+  }
+  .session-grid__item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .training-form-grid:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .training-form-grid {
+    margin-bottom: 10px;
+  }
+  .form-layout .extra-info-form {
+    left: -163%;
+  }
+  .form-layout {
+    height: 1600px;
+  }
+  .format-grid__item {
+    margin-bottom: 10px;
+  }
+}

@@ -150,3 +150,21 @@
   //     margin: 10px;
   //   }
 }
+
+@include mediaSm {
+  .hero-container {
+    padding: 0 40px;
+  }
+
+  .articles-lists {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+
+  .share-article {
+    &__container {
+      padding: 0 40px;
+    }
+  }
+}

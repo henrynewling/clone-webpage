@@ -142,6 +142,12 @@
   .questionsInfo {
     margin-top: -25px;
   }
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
 }
 
 // 600
@@ -150,5 +156,27 @@
   }
   .layout-1__inner {
     padding: 0 40px;
+  }
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
+  .form__group1 {
+    flex-direction: column;
+  }
+  .pd-45 {
+    padding-left: 0;
+    margin-top: 10px;
   }
 }

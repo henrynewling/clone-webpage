@@ -199,7 +199,7 @@ prevBtn3.onclick = () => {
     const form3 = document.getElementById('form3');
 
     form2.style.left = 0
-    form3.style.left = '-150%'
+    form3.style.left = '-163%'
     menuBtn3.style.color = '#dadada';
 }
 

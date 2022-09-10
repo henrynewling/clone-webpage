@@ -230,6 +230,10 @@
     // padding-bottom: 50%;
   }
 
+  .opportunities__wrapper {
+    padding: 0 40px;
+  }
+
   .about-bootcamp {
     &__grid {
       -webkit-flex-direction: row;
@@ -708,7 +712,8 @@
     transform: translateY(-62%);
     width: 24vw;
   }
-  .progress__wrapper {
+  .progress__wrapper,
+  .ready-apply__wrapper {
     padding: 0 40px;
   }
   .progress__headerBox {
@@ -737,4 +742,99 @@
   .event__container {
     padding: 0 40px;
   }
+  .bootcamp__buttons {
+    flex-direction: column;
+
+    button {
+      margin-top: 10px;
+    }
+  }
+  .role__wrapper {
+    padding: 0 40px;
+  }
+  .role__dropdown {
+    width: 100%;
+    left: 10px;
+  }
+  .about-bootcamp__wrapper,
+  .training-program__wrapper,
+  .objectives__container,
+  .next-session__wrapper,
+  .training-feedback__wrapper,
+  .typical-day__wrapper,
+  .preference,
+  .testimonials__container {
+    padding: 0 40px;
+  }
+  .ready-apply__ctxBtn a {
+    margin-bottom: 10px;
+  }
 }
+
+// below 900
+@media screen and (max-width: 900px) {
+  .typical-day__wrapper {
+    flex-direction: column;
+  }
+  .typical-day__container {
+    padding: 0 40px;
+  }
+  .typical-day__dash {
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    width: 4px;
+  }
+  .typical-day__dash::after {
+    top: -17px;
+    left: -10px;
+  }
+  .typical-day__dashFull {
+    width: 4px;
+    height: 155%;
+    left: -24px;
+  }
+  .typical-day__dashFull::after {
+    left: -10px;
+  }
+  .slider-btn-prev {
+    margin-right: 0;
+    right: 90%;
+  }
+  .slider-btn-next {
+    margin-left: 0;
+    left: 90%;
+  }
+  .btn-icon {
+    i {
+      font-size: 20px;
+    }
+  }
+  .process-odd::after {
+    right: -11px;
+  }
+  .process-even {
+    left: 0;
+
+    &::after {
+      right: -11px;
+    }
+  }
+  .admissions__container {
+    padding: 0 40px;
+  }
+  .process-even,
+  .process-odd {
+    width: 100%;
+  }
+  .admissions__process::after {
+    left: 100%;
+  }
+  .admissions__header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+// below 1200

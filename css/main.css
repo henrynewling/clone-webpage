@@ -8604,6 +8604,10 @@ button {
   cursor: pointer;
   padding: 15px;
 }
+.btn-icon i {
+  font-size: 46px;
+  color: #fff;
+}
 
 .slider-btn-next {
   z-index: 10;
@@ -9737,10 +9741,37 @@ body {
   .questionsInfo {
     margin-top: -25px;
   }
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
 }
 @media only screen and (min-width: 600px) {
   .layout-1__inner {
     padding: 0 40px;
+  }
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .questionButtons__button2 {
+    margin-left: 8px;
+  }
+  .questionButtons__button1 {
+    margin-bottom: 0;
+  }
+  .form__group1 {
+    flex-direction: column;
+  }
+  .pd-45 {
+    padding-left: 0;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -9820,6 +9851,10 @@ body {
     flex: 1;
   }
   .footer__container {
+    padding: 0 40px;
+  }
+  .faq__wrapper,
+.otherQuestions__wrapper {
     padding: 0 40px;
   }
 }
@@ -9927,6 +9962,17 @@ body {
     padding: 0 40px;
   }
   .articles-lists__container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-container {
+    padding: 0 40px;
+  }
+  .articles-lists__container {
+    padding: 0 40px;
+  }
+  .share-article__container {
     padding: 0 40px;
   }
 }
@@ -10061,6 +10107,33 @@ body {
   }
   .format-grid__item {
     margin-right: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .additional-info__container {
+    padding: 0 40px;
+  }
+  .additional-header {
+    text-align: center;
+  }
+  .session-grid__item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .training-form-grid:nth-of-type(2) {
+    margin-left: 0;
+  }
+  .training-form-grid {
+    margin-bottom: 10px;
+  }
+  .form-layout .extra-info-form {
+    left: -163%;
+  }
+  .form-layout {
+    height: 1600px;
+  }
+  .format-grid__item {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -10266,6 +10339,9 @@ body {
   }
 }
 @media only screen and (min-width: 900px) {
+  .opportunities__wrapper {
+    padding: 0 40px;
+  }
   .about-bootcamp__grid {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -10684,7 +10760,8 @@ body {
     transform: translateY(-62%);
     width: 24vw;
   }
-  .progress__wrapper {
+  .progress__wrapper,
+.ready-apply__wrapper {
     padding: 0 40px;
   }
   .progress__headerBox h2 {
@@ -10705,6 +10782,93 @@ body {
   }
   .event__container {
     padding: 0 40px;
+  }
+  .bootcamp__buttons {
+    flex-direction: column;
+  }
+  .bootcamp__buttons button {
+    margin-top: 10px;
+  }
+  .role__wrapper {
+    padding: 0 40px;
+  }
+  .role__dropdown {
+    width: 100%;
+    left: 10px;
+  }
+  .about-bootcamp__wrapper,
+.training-program__wrapper,
+.objectives__container,
+.next-session__wrapper,
+.training-feedback__wrapper,
+.typical-day__wrapper,
+.preference,
+.testimonials__container {
+    padding: 0 40px;
+  }
+  .ready-apply__ctxBtn a {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .typical-day__wrapper {
+    flex-direction: column;
+  }
+  .typical-day__container {
+    padding: 0 40px;
+  }
+  .typical-day__dash {
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: -24px;
+    width: 4px;
+  }
+  .typical-day__dash::after {
+    top: -17px;
+    left: -10px;
+  }
+  .typical-day__dashFull {
+    width: 4px;
+    height: 155%;
+    left: -24px;
+  }
+  .typical-day__dashFull::after {
+    left: -10px;
+  }
+  .slider-btn-prev {
+    margin-right: 0;
+    right: 90%;
+  }
+  .slider-btn-next {
+    margin-left: 0;
+    left: 90%;
+  }
+  .btn-icon i {
+    font-size: 20px;
+  }
+  .process-odd::after {
+    right: -11px;
+  }
+  .process-even {
+    left: 0;
+  }
+  .process-even::after {
+    right: -11px;
+  }
+  .admissions__container {
+    padding: 0 40px;
+  }
+  .process-even,
+.process-odd {
+    width: 100%;
+  }
+  .admissions__process::after {
+    left: 100%;
+  }
+  .admissions__header {
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
 

@@ -25,6 +25,8 @@ const menuBtn1 = document.querySelector('.apply-menu-btn1');
 const menuBtn2 = document.querySelector('.apply-menu-btn2');
 const menuBtn3 = document.querySelector('.apply-menu-btn3');
 
+const carouselButtons = document.querySelectorAll('.carousel-menu-btn');
+
 // roles dropdown implementations
 if(roleButtons) {
     for (let roleBtn of roleButtons) {
@@ -121,9 +123,9 @@ if(viewStBtn) {
 }
 
 
-const swiperContainer = document.querySelector('.swiper-container');
+const swiperContainer = document.querySelector('.swipe-carousel-1');
 if(swiperContainer) {
-    const swiper = new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swipe-carousel-1', {
         // Optional parameters
         loop: true,
       
@@ -131,6 +133,21 @@ if(swiperContainer) {
         navigation: {
           nextEl: '.slider-btn-next',
           prevEl: '.slider-btn-prev',
+        },
+      
+        
+      });
+}
+const swiperContainer2 = document.querySelector('.swipe-carousel-2');
+if(swiperContainer2) {
+    const swiper = new Swiper('.swipe-carousel-2', {
+        // Optional parameters
+        slidesPerView: 3,
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
       
         
@@ -247,3 +264,46 @@ if(allForms) {
     }
 }
 
+
+if(carouselButtons) {
+    for(btn of carouselButtons) {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            const et = e.target;
+            const active = document.querySelector('.carousel-menu-btn.active')
+            console.log(et)
+
+
+            if(active) {
+                active.classList.remove('active');
+            }
+            et.classList.add('active');
+
+            let allContent = document.querySelectorAll('.project-information');
+    
+            for(let content of allContent) {
+                
+                if(content.getAttribute('data-number') == et.getAttribute('data-number')) {
+                    
+                    console.log(btn.getAttribute('data-number'))
+                    content.classList.add('show-info')
+                } else {
+                    content.classList.remove('show-info')
+                }
+            }
+
+            let videoContent = document.querySelectorAll('.project-videos');
+    
+            for(let content of videoContent) {
+                if(content.getAttribute('data-number') == et.getAttribute('data-number')) {
+                    content.classList.add('show-video')
+                } else {
+                    content.classList.remove('show-video')
+                }
+            }
+
+
+
+        }
+    }
+}

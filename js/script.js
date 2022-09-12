@@ -59,18 +59,31 @@ if(programButtons) {
             const et = e.target;
             console.log(et)
             const active = document.querySelector('.program__menuBtn.active');
+            const dropIcon = et.querySelector('.btn-ctx-2')
+            if(dropIcon) {
+                dropIcon.classList.toggle('rotate-90')
+            }
+            
             if(active) {
                 active.classList.remove('active');
             }
             et.classList.add('active');
 
             let allContents = document.querySelectorAll('.program__descWrapper');
+            const scrWidth = screen.width
 
             for (let content of allContents) {
                 if(content.getAttribute('data-number') == programBtn.getAttribute('data-number')) {
-                    content.classList.add('show-desc')
+                    if(scrWidth <= 600) {
+                        content.classList.toggle('show-desc')
+                    } else {
+                        content.classList.add('show-desc')
+                    }
+                    
                 } else {
-                    content.classList.remove('show-desc')
+                        content.classList.remove('show-desc')
+                   
+                    
                 }
             }
         }
@@ -162,57 +175,75 @@ for(navLink of navLinks) {
 
 // multi step form 
 
-nextBtn1.onclick = () => {
-    const form1 = document.getElementById('form1');
-    const form2 = document.getElementById('form2');
-
-    form2.style.left = 0
-    form1.style.left = '-100%'
-    menuBtn2.style.color = '#5c48d3';
-    const svg = document.querySelector('.apply-menu-btn2 + svg > path')
-    svg.style.fill = '#5c48d3'
-}
-
-nextBtn2.onclick = () => {
-    const form2 = document.getElementById('form2');
-    const form3 = document.getElementById('form3');
-
-    form3.style.left = 0
-    form2.style.left = '-100%'
-    menuBtn3.style.color = '#5c48d3';
-}
-
-prevBtn1.onclick = () => {
-    const form1 = document.getElementById('form1');
-    const form2 = document.getElementById('form2');
-
-    form1.style.left = 0
-    form2.style.left = '-100%'
-    menuBtn2.style.color = '#dadada';
-    const svg = document.querySelector('.apply-menu-btn2 + svg > path')
-    svg.style.fill = '#dadada'
+if(nextBtn1) {
+    nextBtn1.onclick = () => {
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
     
-}
-
-prevBtn3.onclick = () => {
-    const form2 = document.getElementById('form2');
-    const form3 = document.getElementById('form3');
-
-    form2.style.left = 0
-    const scrWidth = screen.width;
-    if(scrWidth <= 400) {
-        form3.style.left = '163%'
-    } else {
-        form3.style.left = '-163%'
+        form2.style.left = 0
+        form1.style.left = '-100%'
+        menuBtn2.style.color = '#5c48d3';
+        const svg = document.querySelector('.apply-menu-btn2 + svg > path')
+        svg.style.fill = '#5c48d3'
     }
-    
-    menuBtn3.style.color = '#dadada';
 }
+
+
+if(nextBtn2) {
+    nextBtn2.onclick = () => {
+        const form2 = document.getElementById('form2');
+        const form3 = document.getElementById('form3');
+    
+        form3.style.left = 0
+        form2.style.left = '-100%'
+        menuBtn3.style.color = '#5c48d3';
+    }
+}
+
+
+if(prevBtn1) {
+    prevBtn1.onclick = () => {
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
+    
+        form1.style.left = 0
+        form2.style.left = '-100%'
+        menuBtn2.style.color = '#dadada';
+        const svg = document.querySelector('.apply-menu-btn2 + svg > path')
+        svg.style.fill = '#dadada'
+        
+    }
+}
+
+
+
+if(prevBtn3) {
+    prevBtn3.onclick = () => {
+        const form2 = document.getElementById('form2');
+        const form3 = document.getElementById('form3');
+    
+        form2.style.left = 0
+        const scrWidth = screen.width;
+        if(scrWidth <= 400) {
+            form3.style.left = '163%'
+        } else {
+            form3.style.left = '-163%'
+        }
+        
+        menuBtn3.style.color = '#dadada';
+    }
+}
+
+
+
 
 const allForms = document.querySelectorAll('form');
 
-for(let form of allForms) {
-    form.onsubmit = (e) => {
-        e.preventDefault();
+if(allForms) {
+    for(let form of allForms) {
+        form.onsubmit = (e) => {
+            e.preventDefault();
+        }
     }
 }
+

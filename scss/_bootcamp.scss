@@ -1028,16 +1028,18 @@
   box-sizing: content-box;
 
   &:hover {
-    width: 100%;
-    transform: translateX(10px);
-    .session-info__blank {
-      -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-      transform: translateX(0px);
-    }
+    @media screen and (min-width: 600px) {
+      width: 100%;
+      transform: translateX(10px);
+      .session-info__blank {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        transform: translateX(0px);
+      }
 
-    .session-info__toggleText {
-      opacity: 1;
+      .session-info__toggleText {
+        opacity: 1;
+      }
     }
   }
 }
@@ -1178,6 +1180,9 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 .session-info__priceInfo1 {
   font-size: 19px;
@@ -3616,6 +3621,10 @@
   padding-bottom: 16px;
   margin-bottom: 8px;
   border-bottom: 1px solid lightgrey;
+
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+  }
 }
 .position-salary__info {
   display: -webkit-box;
@@ -3646,6 +3655,10 @@
   -ms-letter-spacing: 0.7px;
   letter-spacing: 0.7px;
   line-height: 17px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 10px;
+  }
 }
 .position-salary__amount {
   font-size: 19px;
@@ -3655,6 +3668,9 @@
   font-style: normal;
   font-weight: 500;
   font-weight: bold;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 .testimonials {
@@ -4334,6 +4350,10 @@
   display: flex;
   flex-direction: row;
   padding-bottom: 5px;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .event-day {
@@ -4344,6 +4364,11 @@
   line-height: 28px;
   font-weight: bold;
   padding: 0px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .event-month {
@@ -4354,6 +4379,13 @@
   line-height: 28px;
   font-weight: bold;
   padding: 0px 10px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 19px;
+    line-height: 18px;
+    text-align: left;
+    padding: 0px;
+  }
 }
 
 .event-time {
@@ -4364,6 +4396,10 @@
   font-size: 15px;
   line-height: 18px;
   padding: 5px 0px 0px;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .event-info-link {
@@ -4380,6 +4416,11 @@
   font-weight: bold;
   padding: 0px 0px 8px;
   font-size: 21px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 .event-link {
@@ -4400,6 +4441,11 @@
   padding: 0px;
   line-height: 24px;
   font-size: 17px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .video-time {
@@ -4412,4 +4458,64 @@
   font-style: normal;
   font-weight: 500;
   display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    display: flex;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px 0px 0px;
+  }
+}
+.bootcamp-mb {
+  display: none;
+}
+
+.btn-ctx {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  pointer-events: none;
+}
+
+.btn-ctx-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  pointer-events: none;
+}
+.btn-ctx-2 {
+  margin-left: 18px;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  -webkit-transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  -webkit-transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out;
 }

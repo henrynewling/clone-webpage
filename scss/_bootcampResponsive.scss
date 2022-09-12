@@ -762,12 +762,41 @@
   .next-session__wrapper,
   .training-feedback__wrapper,
   .typical-day__wrapper,
-  .preference,
-  .testimonials__container {
+  .testimonials__container,
+  .program__wrapper {
     padding: 0 40px;
+  }
+  .preference {
+    padding: 0;
+  }
+  .preference__container {
+    margin-bottom: -60px;
   }
   .ready-apply__ctxBtn a {
     margin-bottom: 10px;
+  }
+
+  .bootcamp-mb {
+    display: block;
+
+    & .program__menu {
+      width: 100%;
+    }
+
+    & .program__menuBtn {
+      padding: 28px 24px;
+      background-color: #fff;
+      margin-bottom: 8px;
+      flex-direction: column;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.04);
+    }
+    & .program__descWrapper {
+      padding: 0;
+    }
+  }
+  .program__ctx {
+    display: none;
   }
 }
 
@@ -815,10 +844,10 @@
     right: -11px;
   }
   .process-even {
-    left: 0;
+    left: 50%;
 
     &::after {
-      right: -11px;
+      left: -13px;
     }
   }
   .admissions__container {
@@ -826,10 +855,10 @@
   }
   .process-even,
   .process-odd {
-    width: 100%;
+    width: 50%;
   }
   .admissions__process::after {
-    left: 100%;
+    left: 50%;
   }
   .admissions__header {
     text-align: center;

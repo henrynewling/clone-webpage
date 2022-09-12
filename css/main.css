@@ -4175,10 +4175,7 @@
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 700;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -10056,6 +10053,12 @@ body {
   .apply-layout1 > div {
     padding: 0 40px;
   }
+  .apply-form-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .apply-layout3__container {
     padding: 0 40px;
   }
@@ -10134,6 +10137,11 @@ body {
   }
   .format-grid__item {
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-layout .extra-info-form {
+    left: 163%;
   }
 }
 @media only screen and (min-width: 1200px) {

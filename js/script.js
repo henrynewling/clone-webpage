@@ -241,7 +241,7 @@ if(prevBtn3) {
     
         form2.style.left = 0
         const scrWidth = screen.width;
-        if(scrWidth <= 400) {
+        if(scrWidth <= 460) {
             form3.style.left = '163%'
         } else {
             form3.style.left = '-163%'

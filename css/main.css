@@ -4544,6 +4544,12 @@
   letter-spacing: 0.6px;
   padding-bottom: 5px;
 }
+@media only screen and (max-width: 599px) {
+  .apply-header h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
 .apply-header h1::after {
   content: "";
   display: inline-block;
@@ -11868,7 +11874,7 @@ body {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .form-layout .extra-info-form {
     left: 163%;
   }

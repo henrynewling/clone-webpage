@@ -262,6 +262,10 @@
     -ms-flex: 1;
     flex: 1;
     padding: auto;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 20px;
+    }
   }
 
   &__grid {
@@ -301,6 +305,11 @@
         font-family: HK Compakt;
         font-style: normal;
         font-weight: 700;
+
+        @media only screen and (max-width: 599px) {
+          font-size: 40px;
+          line-height: 45px;
+        }
       }
 
       &__info {
@@ -312,6 +321,11 @@
         font-weight: 500;
         margin-top: 30px;
         text-align: center;
+
+        @media only screen and (max-width: 599px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
       }
 
       &__buttonBox {
@@ -331,6 +345,21 @@
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
+
+        @media only screen and (max-width: 599px) {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-align-items: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 100%;
+        }
       }
 
       &__button {
@@ -357,6 +386,10 @@
         font-weight: 700;
         min-width: 210px;
         border: none;
+
+        @media only screen and (max-width: 599px) {
+          width: 100%;
+        }
 
         &::before {
           background-color: #fafafc;
@@ -524,6 +557,16 @@
         font-style: normal;
         font-weight: 700;
 
+        @media only screen and (max-width: 599px) {
+          font-size: 33px;
+          line-height: 38px;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          text-align: center;
+        }
+
         &__secondary {
           color: $primary-color;
         }
@@ -540,6 +583,11 @@
         font-weight: 700;
         margin: 15px 0 20px;
         font-weight: lighter;
+
+        @media only screen and (max-width: 599px) {
+          font-size: 25px;
+          line-height: 30px;
+        }
       }
     }
   }
@@ -616,6 +664,10 @@
     -ms-flex-pack: initial;
     justify-content: initial;
 
+    @media only screen and (max-width: 599px) {
+      justify-content: center;
+    }
+
     &__box {
       min-height: 29px;
       border-radius: 3px;
@@ -672,6 +724,11 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 
   &__grid__info {
@@ -683,6 +740,12 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 500;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
   }
 
   &__grid__button {
@@ -710,6 +773,13 @@
     -webkit-text-decoration: none;
     text-decoration: none;
     display: inline-block;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 26px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
 
     &::before {
       content: '';
@@ -866,6 +936,10 @@
     -ms-flex-align: center;
     align-items: center;
 
+    @media only screen and (max-width: 599px) {
+      padding-bottom: 20px;
+    }
+
     &Box {
       text-align: center;
       max-width: 730px;
@@ -898,6 +972,16 @@
       font-style: normal;
       font-weight: 700;
 
+      @media only screen and (max-width: 599px) {
+        font-size: 33px;
+        line-height: 38px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+      }
+
       & > span {
         color: $primary-color;
       }
@@ -914,6 +998,11 @@
       font-weight: 700;
       margin: 15px 0 20px;
       font-weight: lighter;
+
+      @media only screen and (max-width: 599px) {
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -957,6 +1046,12 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
+    @media only screen and (max-width: 599px) {
+      max-width: 77px;
+      margin: 35px 8px;
+      padding: 0;
+    }
   }
 
   &__itemWrapper {
@@ -1025,6 +1120,11 @@
     font-weight: 500;
     color: #9d9d9d;
     font-size: 16px;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -1098,6 +1198,10 @@
     align-items: center;
     max-width: 1045px;
     margin-bottom: 40px;
+
+    @media only screen and (max-width: 599px) {
+      padding-bottom: 20px;
+    }
   }
 
   &__header__title {
@@ -1108,6 +1212,16 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
 
     & > span {
       color: $primary-color;
@@ -1165,6 +1279,11 @@
       font-style: normal;
       font-weight: 500;
       padding-top: 0;
+
+      @media only screen and (max-width: 599px) {
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
 
     &__text2 {
@@ -1206,6 +1325,10 @@
     background-color: #fcc01a;
     margin-top: 12px;
     min-width: 22px;
+
+    @media only screen and (max-width: 599px) {
+      margin-top: 12px;
+    }
   }
 
   .content__middle {
@@ -1331,6 +1454,16 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
 
     & > span {
       color: $primary-color;
@@ -1524,6 +1657,21 @@
     padding-bottom: 90px;
     display: inline;
 
+    @media only screen and (max-width: 599px) {
+      padding-bottom: 60px;
+    }
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
+
     & > br {
       display: none;
     }
@@ -1659,6 +1807,11 @@
       font-style: normal;
       font-weight: 700;
       padding-bottom: 0;
+
+      @media only screen and (max-width: 599px) {
+        font-size: 25px;
+        line-height: 30px;
+      }
     }
   }
 
@@ -1701,6 +1854,11 @@
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 500;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   & > a {
     font-size: 19px;
@@ -1793,6 +1951,18 @@
     font-style: normal;
     font-weight: 700;
     padding-bottom: 60px;
+
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 }
 
@@ -1889,6 +2059,18 @@
     font-weight: 700;
     padding-bottom: 60px;
 
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
+
     span {
       color: #5c48d3;
     }
@@ -1911,6 +2093,13 @@
   max-width: 150px;
   max-height: 70px;
   margin: 20px;
+
+  @media only screen and (max-width: 599px) {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 15px;
+    max-width: 100px;
+  }
 }
 
 .company__imgWrapper {
@@ -1999,6 +2188,18 @@
   font-style: normal;
   font-weight: 700;
   padding-bottom: 20px;
+
+  @media only screen and (max-width: 599px) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  @media only screen and (max-width: 599px) {
+    font-size: 33px;
+    line-height: 38px;
+  }
 }
 
 .info-ctx-subHeader {
@@ -2011,6 +2212,11 @@
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .info-ctx-text {
@@ -2098,6 +2304,10 @@
   -ms-flex: 1;
   flex: 1;
 
+  @media only screen and (max-width: 599px) {
+    display: none;
+  }
+
   img {
     width: 100%;
     height: 300px;
@@ -2121,6 +2331,18 @@
     font-family: 'HK Compakt';
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 
   p {
@@ -2132,6 +2354,11 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 500;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 }
 
@@ -2184,6 +2411,10 @@
   font-size: 14px;
   padding-bottom: 16px;
   color: rgb(25, 13, 51);
+
+  @media only screen and (max-width: 599px) {
+    text-align: center;
+  }
 }
 
 .podcast-title {
@@ -2195,12 +2426,39 @@
   font-family: 'HK Compakt';
   font-style: normal;
   font-weight: 700;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .podcast-speaker {
   display: flex;
   align-content: center;
   margin-top: 15px;
+
+  @media only screen and (max-width: 599px) {
+    text-align: center;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 21px;
+    line-height: 24px;
+    padding-top: 4px;
+    color: rgb(25, 13, 51);
+    font-family: 'HK Compakt';
+    font-style: normal;
+    font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
 }
 
 .podcast-dash {
@@ -2211,14 +2469,8 @@
   border-radius: 50px;
   background-color: rgb(252, 192, 26);
 
-  p {
-    font-size: 21px;
-    line-height: 24px;
-    padding-top: 4px;
-    color: rgb(25, 13, 51);
-    font-family: 'HK Compakt';
-    font-style: normal;
-    font-weight: 700;
+  @media only screen and (max-width: 599px) {
+    display: none;
   }
 }
 
@@ -2274,6 +2526,14 @@
     -webkit-text-decoration: none;
     text-decoration: none;
     display: inline-block;
+
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
 
     span {
       padding: 16px 35px;
@@ -2363,6 +2623,18 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
 
     span {
       color: #5c48d3;

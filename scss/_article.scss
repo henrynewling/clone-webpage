@@ -472,6 +472,11 @@
     color: #5c48d3;
     padding-bottom: 8px;
     padding-left: 1px;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 10px;
+      line-height: 16px;
+    }
   }
 
   &__title {
@@ -483,6 +488,11 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
 
     & > div {
       color: #190d33;

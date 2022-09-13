@@ -1614,6 +1614,21 @@
     font-style: normal;
     font-weight: 700;
     padding-top: 16px;
+
+    @media only screen and (max-width: 599px) {
+      padding-bottom: 64px;
+    }
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 }
 .ready-apply__ctxInfo {

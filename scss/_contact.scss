@@ -73,6 +73,11 @@
     letter-spacing: 0.6px;
     padding-bottom: 5px;
 
+    @media only screen and (max-width: 599px) {
+      font-size: 40px;
+      line-height: 52px;
+    }
+
     &::after {
       content: '';
       display: inline-block;
@@ -293,6 +298,11 @@
   font-style: normal;
   font-weight: 500;
   padding-bottom: 14px;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 .questionButtons {
   margin-top: 20px;
@@ -311,6 +321,13 @@
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+
+  @media only screen and (max-width: 599px) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
 
   &__button1 {
     position: relative;
@@ -338,6 +355,15 @@
     text-decoration: none;
     display: inline-block;
     margin-bottom: 10px;
+
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
 
     & > span {
       display: block;
@@ -372,6 +398,15 @@
     background-color: transparent;
     color: #5c48d3;
     border: 1px solid #5c48d3;
+
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+      margin-left: 0;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
     & > span {
       display: block;
       padding: 13px 24px;

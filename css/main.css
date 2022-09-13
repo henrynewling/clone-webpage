@@ -2761,6 +2761,12 @@
   letter-spacing: 0.6px;
   padding-bottom: 5px;
 }
+@media only screen and (max-width: 599px) {
+  .contact-header__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
 .contact-header__title::after {
   content: "";
   display: inline-block;
@@ -2974,6 +2980,12 @@
   font-weight: 500;
   padding-bottom: 14px;
 }
+@media only screen and (max-width: 599px) {
+  .questionInfo {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
 
 .questionButtons {
   margin-top: 20px;
@@ -2992,6 +3004,14 @@
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+@media only screen and (max-width: 599px) {
+  .questionButtons {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .questionButtons__button1 {
   position: relative;
@@ -3019,6 +3039,18 @@
   text-decoration: none;
   display: inline-block;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 599px) {
+  .questionButtons__button1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .questionButtons__button1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .questionButtons__button1 > span {
   display: block;
@@ -3052,6 +3084,18 @@
   background-color: transparent;
   color: #5c48d3;
   border: 1px solid #5c48d3;
+}
+@media only screen and (max-width: 599px) {
+  .questionButtons__button2 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .questionButtons__button2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 .questionButtons__button2 > span {
   display: block;
@@ -11448,12 +11492,6 @@ body {
   }
 }
 @media screen and (max-width: 600px) {
-  .questionButtons__button2 {
-    margin-left: 8px;
-  }
-  .questionButtons__button1 {
-    margin-bottom: 0;
-  }
   .form__group1 {
     flex-direction: column;
   }

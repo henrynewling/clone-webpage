@@ -29,6 +29,10 @@
     -ms-flex: 1;
     flex: 1;
     padding: auto;
+
+    @media only screen and (max-width: 599px) {
+      padding: 0 40px;
+    }
   }
 
   &__blank {
@@ -77,6 +81,11 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 40px;
+      line-height: 45px;
+    }
 
     br {
       display: none;
@@ -153,6 +162,11 @@
   font-weight: 500;
   margin-top: 30px;
   text-align: center;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .session-timing {
   font-size: 24px;
@@ -164,6 +178,11 @@
   color: #fcc01a;
   font-weight: bold;
   margin-top: 8px;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .bootcamp__buttons {
@@ -183,6 +202,21 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  @media only screen and (max-width: 599px) {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
 
   .apply-btn {
     position: relative;
@@ -210,6 +244,19 @@
     text-decoration: none;
     display: inline-block;
     margin-right: 16px;
+
+    @media only screen and (max-width: 599px) {
+      margin-right: 0px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
 
     span {
       display: block;
@@ -244,6 +291,14 @@
     border: 1px solid #fff;
     min-width: 210px;
 
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
     span {
       display: block;
       padding: 16px 35px;
@@ -269,6 +324,20 @@
 
   position: relative;
   opacity: 0.99;
+
+  @media only screen and (min-width: 900px) {
+    margin-top: 100px;
+    padding-bottom: 50%;
+  }
+  @media only screen and (min-width: 600px) {
+    margin-top: 100px;
+    padding-bottom: 60%;
+  }
+
+  @media only screen and (max-width: 599px) {
+    margin-top: 40px;
+    padding-bottom: 60%;
+  }
 
   &::before {
     content: '';
@@ -404,6 +473,16 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      -moz-box-pack: start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 
   p {
@@ -417,6 +496,11 @@
     font-weight: 500;
     padding-top: 30px;
 
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
     a {
       font-size: 19px;
       line-height: 28px;
@@ -427,6 +511,11 @@
       font-family: HK Compakt;
       font-style: normal;
       font-weight: 500;
+
+      @media only screen and (max-width: 599px) {
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
   }
 }
@@ -538,6 +627,16 @@
     font-style: normal;
     font-weight: 700;
 
+    @media only screen and (max-width: 599px) {
+      -moz-box-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
+
     & > span {
       color: #fcc01a;
     }
@@ -552,6 +651,11 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 500;
+
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
 }
 
@@ -715,6 +819,18 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 }
 .objectives__grid3 {
@@ -802,6 +918,18 @@
     font-family: HK Compakt;
     font-style: normal;
     font-weight: 700;
+
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
   }
 }
 
@@ -933,6 +1061,20 @@
     font-style: normal;
     font-weight: 700;
 
+    @media only screen and (max-width: 599px) {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 33px;
+      line-height: 38px;
+    }
+
     span {
       color: #fcc01a;
     }
@@ -961,6 +1103,14 @@
     display: block;
     margin-top: 55px;
     width: 260px;
+
+    @media only screen and (max-width: 599px) {
+      width: 100%;
+    }
+    @media only screen and (max-width: 599px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
 
     &::before {
       content: '';
@@ -1882,6 +2032,11 @@
   flex-direction: row;
 
   @media only screen and (max-width: 599px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  @media only screen and (max-width: 599px) {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1889,6 +2044,10 @@
 }
 .role__select {
   padding-left: 10px;
+
+  @media only screen and (max-width: 599px) {
+    padding-left: 0px;
+  }
 
   &:hover {
     .role__dropdown {
@@ -1922,6 +2081,11 @@
   -ms-flex-direction: row;
   flex-direction: row;
   cursor: pointer;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 .role__selected {
   border-bottom: 5px #5c48d3 solid;
@@ -1981,6 +2145,11 @@
   padding-bottom: 0;
   padding-top: 10px;
   display: none;
+
+  @media only screen and (max-width: 599px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   &.show-info {
     display: block;

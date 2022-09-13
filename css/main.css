@@ -5076,6 +5076,11 @@ button {
   flex: 1;
   padding: auto;
 }
+@media only screen and (max-width: 599px) {
+  .bootcamp__container {
+    padding: 0 40px;
+  }
+}
 .bootcamp__blank {
   height: 110px;
 }
@@ -5121,6 +5126,12 @@ button {
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 700;
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__heroContent h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
 }
 .bootcamp__heroContent h1 br {
   display: none;
@@ -5195,6 +5206,12 @@ button {
   margin-top: 30px;
   text-align: center;
 }
+@media only screen and (max-width: 599px) {
+  .bootcamp__infoText {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 
 .session-timing {
   font-size: 24px;
@@ -5206,6 +5223,12 @@ button {
   color: #fcc01a;
   font-weight: bold;
   margin-top: 8px;
+}
+@media only screen and (max-width: 599px) {
+  .session-timing {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .bootcamp__buttons {
@@ -5225,6 +5248,22 @@ button {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .bootcamp__buttons .apply-btn {
   position: relative;
@@ -5252,6 +5291,24 @@ button {
   text-decoration: none;
   display: inline-block;
   margin-right: 16px;
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons .apply-btn {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons .apply-btn {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons .apply-btn {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 .bootcamp__buttons .apply-btn span {
   display: block;
@@ -5285,6 +5342,17 @@ button {
   border: 1px solid #fff;
   min-width: 210px;
 }
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons .receive-btn {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__buttons .receive-btn {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
 .bootcamp__buttons .receive-btn span {
   display: block;
   padding: 16px 35px;
@@ -5307,6 +5375,24 @@ button {
   overflow: hidden;
   position: relative;
   opacity: 0.99;
+}
+@media only screen and (min-width: 900px) {
+  .bootcamp__heroImage {
+    margin-top: 100px;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .bootcamp__heroImage {
+    margin-top: 100px;
+    padding-bottom: 60%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .bootcamp__heroImage {
+    margin-top: 40px;
+    padding-bottom: 60%;
+  }
 }
 .bootcamp__heroImage::before {
   content: "";
@@ -5436,6 +5522,19 @@ button {
   font-style: normal;
   font-weight: 700;
 }
+@media only screen and (max-width: 599px) {
+  .about-bootcamp__content h2 {
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .about-bootcamp__content h2 {
+    font-size: 33px;
+    line-height: 38px;
+  }
+}
 .about-bootcamp__content p {
   font-size: 19px;
   line-height: 28px;
@@ -5447,6 +5546,12 @@ button {
   font-weight: 500;
   padding-top: 30px;
 }
+@media only screen and (max-width: 599px) {
+  .about-bootcamp__content p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 .about-bootcamp__content p a {
   font-size: 19px;
   line-height: 28px;
@@ -5457,6 +5562,12 @@ button {
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 500;
+}
+@media only screen and (max-width: 599px) {
+  .about-bootcamp__content p a {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .training-program {
@@ -5564,6 +5675,19 @@ button {
   font-style: normal;
   font-weight: 700;
 }
+@media only screen and (max-width: 599px) {
+  .program-layout1__wrapper h2 {
+    -moz-box-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .program-layout1__wrapper h2 {
+    font-size: 33px;
+    line-height: 38px;
+  }
+}
 .program-layout1__wrapper h2 > span {
   color: #fcc01a;
 }
@@ -5576,6 +5700,12 @@ button {
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 500;
+}
+@media only screen and (max-width: 599px) {
+  .program-layout1__wrapper p {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .program-layout2 {
@@ -5737,6 +5867,21 @@ button {
   font-style: normal;
   font-weight: 700;
 }
+@media only screen and (max-width: 599px) {
+  .objectives__grid1 h2 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .objectives__grid1 h2 {
+    font-size: 33px;
+    line-height: 38px;
+  }
+}
 
 .objectives__grid3 {
   margin-bottom: 0;
@@ -5818,6 +5963,21 @@ button {
   font-family: HK Compakt;
   font-style: normal;
   font-weight: 700;
+}
+@media only screen and (max-width: 599px) {
+  .advantage__header {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .advantage__header {
+    font-size: 33px;
+    line-height: 38px;
+  }
 }
 
 .advantage__content {
@@ -5944,6 +6104,23 @@ button {
   font-style: normal;
   font-weight: 700;
 }
+@media only screen and (max-width: 599px) {
+  .session-content h2 {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .session-content h2 {
+    font-size: 33px;
+    line-height: 38px;
+  }
+}
 .session-content h2 span {
   color: #fcc01a;
 }
@@ -5970,6 +6147,17 @@ button {
   display: block;
   margin-top: 55px;
   width: 260px;
+}
+@media only screen and (max-width: 599px) {
+  .session-content a {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .session-content a {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 .session-content a::before {
   content: "";
@@ -6888,6 +7076,12 @@ button {
 }
 @media only screen and (max-width: 599px) {
   .role__header {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .role__header {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -6896,6 +7090,11 @@ button {
 
 .role__select {
   padding-left: 10px;
+}
+@media only screen and (max-width: 599px) {
+  .role__select {
+    padding-left: 0px;
+  }
 }
 .role__select:hover .role__dropdown {
   opacity: 1;
@@ -6925,6 +7124,12 @@ button {
   -ms-flex-direction: row;
   flex-direction: row;
   cursor: pointer;
+}
+@media only screen and (max-width: 599px) {
+  .role__selectTitle {
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 
 .role__selected {
@@ -6985,6 +7190,12 @@ button {
   padding-bottom: 0;
   padding-top: 10px;
   display: none;
+}
+@media only screen and (max-width: 599px) {
+  .role__infoText {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 .role__infoText.show-info {
   display: block;

@@ -2119,6 +2119,7 @@
 .program__descWrapper {
   padding: 32px 64px;
   display: none;
+  width: 100%;
 
   &.show-desc {
     display: block;
@@ -2157,7 +2158,7 @@
 }
 
 .program__descImages {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 64px 32px;
   flex-wrap: wrap;

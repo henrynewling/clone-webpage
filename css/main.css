@@ -11752,9 +11752,6 @@ body {
   .additional-info__wrapper {
     padding-bottom: 20px;
   }
-  .apply-layout3__wrapper {
-    margin-top: -330px;
-  }
   .apply-header p {
     font-size: 18px;
     -webkit-letter-spacing: 0.2px;
@@ -11793,12 +11790,6 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-  }
-  .apply-layout3__container {
-    padding: 0 40px;
-  }
-  .apply-layout3__wrapper {
-    margin-top: -370px;
   }
   .apply-menu-btn1 {
     -webkit-flex-wrap: wrap;
@@ -11872,6 +11863,12 @@ body {
   }
   .format-grid__item {
     margin-bottom: 10px;
+  }
+  .apply-layout3__container {
+    padding: 0 40px;
+  }
+  .apply-layout3__wrapper {
+    margin-top: -300px;
   }
 }
 @media screen and (max-width: 450px) {

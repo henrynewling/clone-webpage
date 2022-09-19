@@ -37,7 +37,9 @@
 }
 
 .scroll {
-  background: rgb(255, 255, 255);
+  &:not(.bootcampHeader) {
+    background: rgb(255, 255, 255);
+  }
   height: 70px;
   box-shadow: rgb(0 0 0 / 6%) 0px 0.2rem 0.5rem 0px;
 }
@@ -177,21 +179,23 @@
 }
 
 .scroll {
-  .nav {
-    .nav__link {
-      color: #5c48d3;
+  &:not(.bootcampHeader) {
+    .nav {
+      .nav__link {
+        color: #5c48d3;
+      }
+      .nav__buttonItem {
+        color: #5c48d3;
+      }
+      .nav__secondaryButton {
+        color: #fff;
+        background-color: #5c48d3;
+      }
     }
-    .nav__buttonItem {
-      color: #5c48d3;
-    }
-    .nav__secondaryButton {
-      color: #fff;
-      background-color: #5c48d3;
-    }
-  }
-  .menu-btn {
-    &__line {
-      background: #5c48d3;
+    .menu-btn {
+      &__line {
+        background: #5c48d3;
+      }
     }
   }
 }

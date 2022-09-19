@@ -27,6 +27,8 @@ const menuBtn3 = document.querySelector('.apply-menu-btn3');
 
 const carouselButtons = document.querySelectorAll('.carousel-menu-btn');
 
+const subHeader = document.querySelector('.sub-header');
+
 // roles dropdown implementations
 if(roleButtons) {
     for (let roleBtn of roleButtons) {
@@ -164,6 +166,9 @@ if(header) {
         const logo2 = document.querySelector('.logo2')
         logo2.classList.toggle("show-logo", window.scrollY > 0)
         logo1.classList.toggle("hide-logo", window.scrollY > 0)
+        if(subHeader) {
+            subHeader.classList.toggle("show-subHeader", window.scrollY > 10)
+        }
         
     }
 }

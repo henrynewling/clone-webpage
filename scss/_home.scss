@@ -2897,3 +2897,71 @@
 .enterprise-drop-menu {
   transform: translate(650.4px, 80px);
 }
+
+@media only screen and (max-width: 599px) {
+  .bottom-apply-btn:hover {
+    transform: none;
+  }
+}
+
+.bottom-apply-btn:hover {
+  color: rgb(92, 72, 211);
+}
+
+.bottom-apply-btn:hover {
+  transform: translateY(1px);
+}
+
+@media only screen and (max-width: 599px) {
+  .bottom-apply-btn {
+    position: fixed;
+    bottom: 0px;
+    z-index: 4;
+    width: 100%;
+    display: block;
+    border-radius: 0px;
+    background-color: rgb(252, 192, 26);
+
+    box-shadow: rgb(0 0 0 / 20%) 0px -2px 20px;
+    transform: translateY(0px);
+    transition: all 0.4s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+    font-size: 19px;
+    line-height: 31px;
+    color: rgb(92, 72, 211);
+
+    font-family: 'HK Compakt';
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+
+    & > span {
+      display: block;
+      padding: 16px 35px;
+      position: relative;
+    }
+  }
+}
+
+// .bottom-apply-btn {
+//   position: relative;
+//   cursor: pointer;
+//   border-radius: 5px;
+//   text-align: center;
+//   text-overflow: ellipsis;
+//   overflow: hidden;
+//   box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px;
+//   transition-property: all;
+//   transition-duration: 0.3s;
+//   outline-style: none;
+//   transition-timing-function: ease-in-out;
+//   font-size: 19px;
+//   line-height: 31px;
+//   color: rgb(92, 72, 211);
+//   background-color: rgb(255, 255, 255);
+//   font-family: 'HK Compakt';
+//   font-style: normal;
+//   font-weight: 700;
+//   text-decoration: none;
+//   display: none;
+// }

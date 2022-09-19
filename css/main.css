@@ -2686,6 +2686,91 @@
   height: 415px;
 }
 
+.drop-menu {
+  position: absolute;
+  inset: 0px auto auto 0px;
+  transform: translate(475px, 80px);
+  width: 290px;
+  background-color: rgb(255, 255, 255);
+  padding: 16px;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 6px 1px;
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+}
+.drop-menu::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: rgb(250, 250, 252);
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 2px;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-left: 1px solid rgb(241, 241, 241);
+}
+
+.drop-menu__list {
+  padding: 12px 18px;
+  border-radius: 5px;
+  transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+}
+.drop-menu__list:hover {
+  background-color: rgba(92, 72, 211, 0.1);
+}
+
+.drop-menu__link {
+  text-decoration: none;
+}
+
+.drop-menu__primaryText {
+  color: rgb(25, 13, 51);
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  line-height: 25px;
+}
+
+.drop-menu__secondaryText {
+  color: #5c48d3;
+  font-size: 15px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.drop-menu__secondaryText > span > span {
+  font-weight: bold;
+}
+
+.entprBtn {
+  padding: 15px 17px;
+}
+
+.bootcampBtn:hover .drop-menu,
+.entprBtn:hover .drop-menu {
+  visibility: visible;
+  opacity: 1;
+  user-select: all;
+}
+
+.nav__buttonItem {
+  padding: 15px 17px;
+}
+.nav__buttonItem:hover {
+  color: #fcc01a;
+}
+
+.nav__link:hover {
+  color: #fcc01a;
+}
+
+.enterprise-drop-menu {
+  transform: translate(650.4px, 80px);
+}
+
 .layout-1 {
   background-color: #5c48d3;
   display: -webkit-box;

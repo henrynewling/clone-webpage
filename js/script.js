@@ -164,8 +164,12 @@ if(header) {
         header.classList.toggle("scroll", window.scrollY > 0);
         const logo1 = document.querySelector('.logo1')
         const logo2 = document.querySelector('.logo2')
-        logo2.classList.toggle("show-logo", window.scrollY > 0)
-        logo1.classList.toggle("hide-logo", window.scrollY > 0)
+        if(logo2) {
+            logo2.classList.toggle("show-logo", window.scrollY > 0)
+            logo1.classList.toggle("hide-logo", window.scrollY > 0)
+        }
+        
+        
         if(subHeader) {
             subHeader.classList.toggle("show-subHeader", window.scrollY > 10)
         }

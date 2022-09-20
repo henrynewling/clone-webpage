@@ -2804,10 +2804,14 @@
 
 // header dropdown
 
+.bootcampBtn, .entprBtn {
+  position: relative;
+}
+
 .drop-menu {
   position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate(475px, 80px);
+  transform: translate(-30%, 50px);
   width: 290px;
   background-color: rgb(255, 255, 255);
   padding: 16px;
@@ -2894,9 +2898,7 @@
   }
 }
 
-.enterprise-drop-menu {
-  transform: translate(650.4px, 80px);
-}
+
 
 @media only screen and (max-width: 599px) {
   .bottom-apply-btn:hover {

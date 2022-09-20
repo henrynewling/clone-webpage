@@ -2688,10 +2688,14 @@
   height: 415px;
 }
 
+.bootcampBtn, .entprBtn {
+  position: relative;
+}
+
 .drop-menu {
   position: absolute;
   inset: 0px auto auto 0px;
-  transform: translate(475px, 80px);
+  transform: translate(-30%, 50px);
   width: 290px;
   background-color: rgb(255, 255, 255);
   padding: 16px;
@@ -2767,10 +2771,6 @@
 
 .nav__link:hover {
   color: #fcc01a;
-}
-
-.enterprise-drop-menu {
-  transform: translate(650.4px, 80px);
 }
 
 @media only screen and (max-width: 599px) {
@@ -10960,6 +10960,11 @@ button {
   padding-top: 13px;
   color: rgb(25, 13, 51);
 }
+.sub-header__primaryLink:hover {
+  color: rgb(92, 72, 211);
+  transition: all 0.2s ease-in-out 0s;
+  border-bottom: 3px solid rgb(92, 72, 211);
+}
 
 .sub-header__secondaryLink {
   margin-left: 32px;
@@ -10971,6 +10976,11 @@ button {
   font-style: normal;
   font-weight: 500;
   color: rgb(0, 0, 0);
+}
+.sub-header__secondaryLink:hover {
+  color: rgb(92, 72, 211);
+  transition: all 0.2s ease-in-out 0s;
+  border-bottom: 3px solid rgb(92, 72, 211);
 }
 
 @font-face {

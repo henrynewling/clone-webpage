@@ -5753,6 +5753,12 @@
   height: 100%;
   padding-top: 13px;
   color: rgb(25, 13, 51);
+
+  &:hover {
+    color: rgb(92, 72, 211);
+    transition: all 0.2s ease-in-out 0s;
+    border-bottom: 3px solid rgb(92, 72, 211);
+  }
 }
 
 .sub-header__secondaryLink {
@@ -5765,4 +5771,9 @@
   font-style: normal;
   font-weight: 500;
   color: rgb(0, 0, 0);
+  &:hover {
+    color: rgb(92, 72, 211);
+    transition: all 0.2s ease-in-out 0s;
+    border-bottom: 3px solid rgb(92, 72, 211);
+  }
 }
